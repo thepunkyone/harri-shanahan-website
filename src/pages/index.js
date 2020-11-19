@@ -21,7 +21,7 @@ export default function Index() {
       <>
         <Header/>
         <div>
-          <img style={{width: '100%'}} alt='Cycling girl dressed as a fairy tale knight' src='./images/tumblr.png'/>
+          <img style={{width: '100%'}} alt='Cycling girl dressed as a fairy tale knight' src='./images/tumblr.png?nf_resize=fit&w=300&h=400'/>
           <Typography variant="h2" component="h1" gutterBottom>
             <b>Animation. Video. Art.</b>
           </Typography>
