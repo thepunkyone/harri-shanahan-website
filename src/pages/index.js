@@ -20,7 +20,12 @@ export default function Index() {
   return (
       <>
         <Header/>
-        <div><img style={{width: '100%'}} alt='Cycling girl dressed as a fairy tale knight' src='./images/tumblr.png'/></div>
+        <div>
+          <img style={{width: '100%'}} alt='Cycling girl dressed as a fairy tale knight' src='./images/tumblr.png'/>
+          <Typography variant="h2" component="h1" gutterBottom>
+            <b>Animation. Video. Art.</b>
+          </Typography>
+        </div>
     <Container maxWidth="lg">
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>

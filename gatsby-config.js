@@ -11,16 +11,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Roboto`,
-            variants: [`300`, `400`, `500`],
-            subsets: [`latin`]
-          },
+          `merriweather\:300,400,500` // you can also specify font weights and styles
         ],
-      },
+        display: 'swap'
+      }
     },
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
