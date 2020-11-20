@@ -5,27 +5,45 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#ab47bc',
+      main: '#a051bc',
     },
     secondary: {
-      main: '#009688',
+      main: '#027b84',
     },
     error: {
       main: red.A400,
     },
     background: {
       default: '#fff',
+      // default: '#f2f2f2',
     },
-    // text: {
-    //   primary: '#fff',
-    // }
+    text: {
+      primary: '#000c26',
+    }
   },
   typography: {
-    "fontFamily": `"Merriweather", "Helvetica", "Arial", sans-serif`,
-    "fontSize": 14,
-    "fontWeightLight": 300,
-    "fontWeightRegular": 400,
-    "fontWeightMedium": 500
+    fontFamily: `"Merriweather", "Helvetica", "Arial", sans-serif`,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 600,
+    fontWeightBold: 700,
+    h2: {
+      fontWeight: 600,
+    },
+    body1: {
+      fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
+      fontWeight: 400,
+      fontSize: 19,
+    },
+    body2: {
+      fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
+      fontWeight: 400,
+      fontSize: 16,
+    },
+    button: {
+      fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
+      fontWeight: 600,
+    }
   }
 });
 

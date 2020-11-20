@@ -11,10 +11,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          `merriweather\:300,400,500` // you can also specify font weights and styles
+          'merriweather\:300,400,700',
+          'open sans\:400,600,700'
         ],
         display: 'swap'
       }
@@ -24,6 +25,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
   ],
   siteMetadata: {
-    title: 'My page',
+    title: 'Harri Shanahan - Portfolio',
   },
 };
