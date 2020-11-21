@@ -6,6 +6,8 @@ import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
 import Paper from '@material-ui/core/Paper'
 import Avatar from '@material-ui/core/Avatar'
+import CardComponent from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
 
 import ProTip from '../components/ProTip'
 import Link from '../components/Link'
@@ -13,24 +15,74 @@ import Copyright from '../components/Copyright'
 import Card from '../components/Card'
 import Header from '../components/Header'
 
+import styles from './index.module.scss'
+import Toolbar from '@material-ui/core/Toolbar'
+
 export default function Index() {
   const isLargeScreen = useMediaQuery('(min-width:600px)')
 
   return (
     <>
       <Header />
-      <div>
+      <Container maxWidth={false} disableGutters className={styles.hero}>
         <img
-          style={{ width: '100%' }}
+          className={styles.heroImage}
           alt="Cycling girl dressed as a fairy tale knight"
           src="./images/tumblr.png"
         />
-        <Typography variant="h2" component="h1" color="secondary" gutterBottom>
-          ANIMATION. VIDEO. ART.
+        <Typography variant="h1" component="h1" className={styles.heroHeading}>
+          <span>Animation.</span>
+          <span>Video.</span>
+          <span>Art.</span>
         </Typography>
-        <Typography variant="h2" component="h1" color="secondary" gutterBottom>
-          Animation. Video. Art.
-        </Typography>
+      </Container>
+      <Container maxWidth={false} className={styles.welcomeSection}>
+        <Container maxWidth="lg" className={styles.welcomeSectionInner}>
+          <Box my={4} className={styles.welcomeSectionColumn}>
+            <Typography variant="h2" component="h2" gutterBottom>
+              Welcome
+            </Typography>
+            <Typography
+              className={styles.welcomeDescription}
+              variant="body1"
+              component="p"
+              gutterBottom
+            >
+              Thanks for visiting my site. I love a creative challenge and
+              helping people achieve their vision. If you’ve got an idea for a
+              great video or animation, I can help you make it a reality. If you
+              need help creating a unique and imaginative concept I can help
+              there, too. Get in touch for a chat and let’s make things happen.
+            </Typography>
+            <Button size="large" variant="contained" color="primary">
+              Get in touch
+            </Button>
+          </Box>
+          <Box my={4} className={styles.welcomeSectionColumn}>
+            <CardComponent className={styles.welcomeSectionCard}>
+              <CardContent>
+                <Avatar
+                  className={styles.avatarLarge}
+                  alt="Harri Shanahan"
+                  src="https://harrishanahan.files.wordpress.com/2020/11/nice-profile-pic.jpg?w=139"
+                />
+                <Typography
+                  variant="h4"
+                  component="p"
+                  color="secondary"
+                  gutterBottom
+                >
+                  Harri Shanahan
+                </Typography>
+                <Typography variant="body1" component="p" color="textSecondary">
+                  Editor, Filmmaker, 2DAnimator, Artist
+                </Typography>
+              </CardContent>
+            </CardComponent>
+          </Box>
+        </Container>
+      </Container>
+      <Container maxWidth="lg">
         <Typography variant="h4" component="h1" color="primary" gutterBottom>
           <b>Dystopic Fiction</b>
         </Typography>
@@ -59,7 +111,7 @@ export default function Index() {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </Typography>
-      </div>
+      </Container>
       <Container maxWidth="lg">
         <Box my={4}>
           <Typography variant="h4" component="h1" gutterBottom>
