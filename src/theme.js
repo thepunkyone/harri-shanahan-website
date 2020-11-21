@@ -1,5 +1,5 @@
-import { red } from '@material-ui/core/colors';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { red } from '@material-ui/core/colors'
+import { createMuiTheme } from '@material-ui/core/styles'
 
 // A custom theme for this app
 const theme = createMuiTheme({
@@ -19,7 +19,7 @@ const theme = createMuiTheme({
     },
     text: {
       primary: '#000c26',
-    }
+    },
   },
   typography: {
     fontFamily: `"Merriweather", "Helvetica", "Arial", sans-serif`,
@@ -43,8 +43,8 @@ const theme = createMuiTheme({
     button: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
       fontWeight: 600,
-    }
-  }
-});
+    },
+  },
+})
 
-export default theme;
+export default theme

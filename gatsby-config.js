@@ -13,12 +13,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: [
-          'merriweather\:300,400,700',
-          'open sans\:400,600,700'
-        ],
-        display: 'swap'
-      }
+        fonts: ['merriweather:300,400,700', 'open sans:400,600,700'],
+        display: 'swap',
+      },
     },
     // If you want to use styled components you should add the plugin here.
     // 'gatsby-plugin-styled-components',
@@ -26,7 +23,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require("sass"),
+        implementation: require('sass'),
       },
     },
     'gatsby-plugin-svgr',
@@ -57,4 +54,4 @@ module.exports = {
   siteMetadata: {
     title: 'Harri Shanahan - Portfolio',
   },
-};
+}

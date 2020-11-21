@@ -1,6 +1,6 @@
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import MuiLink from '@material-ui/core/Link';
+import React from 'react'
+import Typography from '@material-ui/core/Typography'
+import MuiLink from '@material-ui/core/Link'
 
 export default function Copyright() {
   return (
@@ -9,8 +9,7 @@ export default function Copyright() {
       <MuiLink color="inherit" href="https://material-ui.com/">
         Your Website
       </MuiLink>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      {new Date().getFullYear()}.
     </Typography>
-  );
+  )
 }
