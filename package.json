@@ -6,10 +6,16 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "latest",
+    "@svgr/webpack": "^5.5.0",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "gatsby": "latest",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-material-ui": "latest",
+    "gatsby-plugin-prettier-eslint": "^1.0.4",
     "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-sass": "^2.6.0",
+    "gatsby-plugin-svgr": "^2.0.2",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"
@@ -17,6 +23,27 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.6.3",
+    "babel-preset-gatsby": "^0.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.0",
+    "prettier-stylelint": "^0.4.2",
+    "react-test-renderer": "^17.0.1",
+    "sass": "^1.29.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
