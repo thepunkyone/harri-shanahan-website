@@ -12,7 +12,6 @@
     "gatsby": "latest",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-material-ui": "latest",
-    "gatsby-plugin-prettier-eslint": "^1.0.4",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-sass": "^2.6.0",
     "gatsby-plugin-svgr": "^2.0.2",

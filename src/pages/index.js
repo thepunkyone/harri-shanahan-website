@@ -26,6 +26,9 @@ export default function Index() {
           src="./images/tumblr.png"
         />
         <Typography variant="h2" component="h1" color="secondary" gutterBottom>
+          ANIMATION. VIDEO. ART.
+        </Typography>
+        <Typography variant="h2" component="h1" color="secondary" gutterBottom>
           Animation. Video. Art.
         </Typography>
         <Typography variant="h4" component="h1" color="primary" gutterBottom>
@@ -135,10 +138,6 @@ export default function Index() {
               Link
             </Button>
           </Paper>
-          <Avatar
-            alt="Harri Shanahan"
-            src="https://harrishanahan.files.wordpress.com/2020/11/nice-profile-pic.jpg?w=139"
-          />
           {isLargeScreen && (
             <>
               <ProTip />

@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 
 import styles from './header.module.scss'
+import Avatar from '@material-ui/core/Avatar'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,19 +29,23 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar color="secondary" position="static">
         <Toolbar>
+          <Avatar
+            alt="Harri Shanahan"
+            src="https://harrishanahan.files.wordpress.com/2020/11/nice-profile-pic.jpg?w=139"
+          />
+          <Typography variant="h6" className={classes.title}>
+            Harri Shanahan
+          </Typography>
+          <Button color="inherit">About</Button>
+          <Button color="inherit">Video</Button>
           <IconButton
-            edge="start"
+            edge="end"
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Harri Shanahan
-          </Typography>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Video</Button>
         </Toolbar>
       </AppBar>
     </div>
