@@ -74,7 +74,7 @@ export default function Index() {
                 >
                   Harri Shanahan
                 </Typography>
-                <Typography variant="body1" component="p" color="textSecondary">
+                <Typography variant="body2" component="p" color="textSecondary">
                   Editor, Filmmaker, 2DAnimator, Artist
                 </Typography>
               </CardContent>
@@ -100,7 +100,12 @@ export default function Index() {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </Typography>
-        <Typography variant="body2" component="p" paragraph>
+        <Typography
+          variant="body2"
+          component="p"
+          paragraph
+          color="textSecondary"
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry’s standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and

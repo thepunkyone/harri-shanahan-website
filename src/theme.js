@@ -1,8 +1,8 @@
 import { red } from '@material-ui/core/colors'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 
 // A custom theme for this app
-const theme = createMuiTheme({
+let theme = createMuiTheme({
   palette: {
     primary: {
       main: '#a051bc',
@@ -30,9 +30,8 @@ const theme = createMuiTheme({
     fontWeightMedium: 600,
     fontWeightBold: 700,
     h1: {
-      // fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
       fontWeight: 700,
-      fontSize: 80,
+      fontSize: '6rem',
     },
     h2: {
       fontWeight: 600,
@@ -42,13 +41,13 @@ const theme = createMuiTheme({
     },
     body1: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
-      fontWeight: 400,
-      fontSize: 22,
+      fontWeight: 500,
+      fontSize: '1.6rem',
     },
     body2: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
       fontWeight: 400,
-      fontSize: 19,
+      fontSize: '1.4rem',
     },
     button: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
@@ -56,5 +55,7 @@ const theme = createMuiTheme({
     },
   },
 })
+
+theme = responsiveFontSizes(theme)
 
 export default theme
