@@ -7,7 +7,7 @@ const Picture = ({ sources, src, alt, lazyload, ...props }) => {
   let Image = null
 
   if (lazyload) {
-    Image = <LazyImage dataSrc={src} alt={alt} />
+    Image = <LazyImage dataSrc={src} src={src} alt={alt} />
   } else {
     Image = <img src={src} alt={alt} />
   }
@@ -24,7 +24,7 @@ const Picture = ({ sources, src, alt, lazyload, ...props }) => {
 
 Picture.propTypes = {
   sources: PropTypes.arrayOf(PropTypes.object).isRequired,
-  src: PropTypes.string,
+  src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   lazyload: PropTypes.bool,
 }
