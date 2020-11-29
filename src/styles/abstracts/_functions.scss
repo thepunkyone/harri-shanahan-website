@@ -1,0 +1,5 @@
+@function gutter($multiplier: 0) {
+  $base: 8px;
+
+  @return $base * $multiplier;
+}

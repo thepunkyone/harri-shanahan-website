@@ -1,0 +1,12 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.footer {
+  background-color: $colour-secondary-extra-dark;
+  color: $colour-white;
+  padding-top: gutter(6);
+  padding-bottom: gutter(6);
+}

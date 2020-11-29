@@ -17,9 +17,6 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
-  },
 }))
 
 export default function Header() {
@@ -27,25 +24,26 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar color="secondary" position="static">
+      <AppBar color="secondary" position="static" className={styles.header}>
         <Toolbar>
           <Avatar
+            className={styles.avatar}
             alt="Harri Shanahan"
             src="https://harrishanahan.files.wordpress.com/2020/11/nice-profile-pic.jpg?w=139"
           />
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={styles.title}>
             Harri Shanahan
           </Typography>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Video</Button>
-          <IconButton
-            edge="end"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
+          {/*<Button color="inherit">About</Button>*/}
+          {/*<Button color="inherit">Video</Button>*/}
+          {/*<IconButton*/}
+          {/*  edge="end"*/}
+          {/*  className={classes.menuButton}*/}
+          {/*  color="inherit"*/}
+          {/*  aria-label="menu"*/}
+          {/*>*/}
+          {/*  <MenuIcon />*/}
+          {/*</IconButton>*/}
         </Toolbar>
       </AppBar>
     </div>

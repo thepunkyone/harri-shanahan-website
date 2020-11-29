@@ -1,5 +1,6 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
+import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/core/styles'
 
 import theme from '../src/theme'
@@ -11,6 +12,7 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Story />
     </ThemeProvider>
   ),

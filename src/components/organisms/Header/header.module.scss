@@ -1,0 +1,19 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+}
+
+// Avatar
+.avatar {
+  margin-right: gutter(2);
+}
+
+// Title
+.title {
+  flex-grow: 1;
+  letter-spacing: 0.1em;
+}
