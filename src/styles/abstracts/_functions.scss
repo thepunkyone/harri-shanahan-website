@@ -1,5 +1,87 @@
+@import "variables";
+
+// Gutter
+
 @function gutter($multiplier: 0) {
   $base: 8px;
 
   @return $base * $multiplier;
 }
+
+// Media queries
+
+//
+// Converts a value to a string
+//
+
+@function tostring($value) {
+  @return inspect($value);
+}
+
+//
+// Returns a named breakpoint or custom width depending on whats passed in
+//
+
+@function formatbreakpoint($width, $min: false) {
+  $str: tostring($width);
+
+  @if (str-index($str, 'px')) {
+    @if ($min == true) {
+      @return $width + 1px;
+    }
+
+    @else {
+      @return $width;
+    }
+  }
+
+  @else {
+    $namedWidth: map-get($media-queries, $width);
+
+    @if ($min == true) {
+      @return $namedWidth + 1px;
+    }
+
+    @else {
+      @return $namedWidth;
+    }
+  }
+}
+
+//
+// Returns a 'max-width' media query for a given breakpoint
+//
+
+@mixin below($max) {
+  $query: formatbreakpoint($max);
+
+  @media (max-width: $query) {
+    @content;
+  }
+}
+
+//
+// Returns a 'min-width' media query for a given breakpoint
+//
+
+@mixin above($min) {
+  $query: formatbreakpoint($min, true);
+
+  @media (min-width: $query) {
+    @content;
+  }
+}
+
+//
+// Returns a 'min-width' and 'max-width' media query for a given breakpoint
+//
+
+@mixin between($min, $max) {
+  $minQuery: formatbreakpoint($min, true);
+  $maxQuery: formatbreakpoint($max);
+
+  @media (min-width: $minQuery) and (max-width: $maxQuery) {
+    @content;
+  }
+}
+

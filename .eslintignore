@@ -1,2 +1,4 @@
 # Ignore gatsby-generated files
 public/*
+.cache/*
+.netlify/*

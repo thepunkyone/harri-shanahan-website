@@ -18,3 +18,16 @@ $colour-grey-delta: #585858;
 
 $colour-text-primary: #000c26;
 $colour-text-secondary: #3a3a3a;
+
+
+// Media queries
+
+$media-queries: (
+  xxsmall: 375px,
+  xsmall: 480px,
+  small: 660px,
+  medium: 768px,
+  large: 960px,
+  xlarge: 1024px,
+  xxlarge: 1280px
+);

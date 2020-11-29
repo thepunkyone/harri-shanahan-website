@@ -1,0 +1,44 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Gallery
+// ==========================================================================
+
+.gallery {
+  display: grid;
+  gap: gutter(3);
+
+  @include below(xsmall) {
+    grid: auto-flow auto / 1fr;
+  }
+
+  @include between(xsmall, medium) {
+    grid: auto-flow auto / repeat(2, 1fr);
+  }
+
+  @include between(medium, xlarge) {
+    grid: auto-flow auto / repeat(3, 1fr);
+  }
+
+  @include above(xlarge) {
+    grid: auto-flow auto / repeat(4, 1fr);
+  }
+}
+
+.item {
+  border-radius: gutter(1);
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+}

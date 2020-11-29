@@ -9,14 +9,16 @@ export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
 }
 
-export const decorators = [
-  (Story) => (
+const withThemeProvider = (Story, context) => {
+  return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Story />
+      <Story {...context} />
     </ThemeProvider>
-  ),
-]
+  )
+}
+
+export const decorators = [withThemeProvider]
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
