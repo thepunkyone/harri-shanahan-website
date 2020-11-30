@@ -39,6 +39,9 @@ const customTheme = createMuiTheme({
     h4: {
       fontWeight: 600,
     },
+    h5: {
+      fontWeight: 500,
+    },
     body1: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
       fontWeight: 500,
@@ -57,7 +60,5 @@ const customTheme = createMuiTheme({
 })
 
 const theme = responsiveFontSizes(customTheme)
-
-console.log(theme.transitions)
 
 export default theme

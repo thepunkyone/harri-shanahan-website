@@ -38,7 +38,7 @@ const GalleryThumbnail = ({ title, url, image, video }) => {
           lazyload
         />
         <div className={styles.overlay}>
-          <Typography component="h4" variant="h4" className={styles.title}>
+          <Typography component="h5" variant="h5" className={styles.title}>
             {title}
           </Typography>
         </div>
