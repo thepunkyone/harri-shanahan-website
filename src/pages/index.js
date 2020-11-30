@@ -95,7 +95,11 @@ export default function Index() {
         </Typography>
       </Container>
       <Container maxWidth={false} className={styles.welcomeSection}>
-        <Container maxWidth="lg" className={styles.welcomeSectionInner}>
+        <Container
+          maxWidth="lg"
+          disableGutters
+          className={styles.welcomeSectionInner}
+        >
           <Box my={4} className={styles.welcomeSectionColumn}>
             <Typography variant="h2" component="h2" gutterBottom>
               Welcome
