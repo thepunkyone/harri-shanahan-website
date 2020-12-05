@@ -34,14 +34,12 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  //color: #f7f0ea;
   color: $colour-secondary-light;
   font-size: 70px;
   letter-spacing: 0.2em;
   line-height: 1.5em !important;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-  //text-transform: uppercase;
   transform: translate(-50%, -50%);
   z-index: 10;
 
@@ -114,7 +112,6 @@
 
 .welcomeSectionCard {
   background-color: rgba(#f7f0ea, 0.1) !important;
-  //max-width: 460px;
   margin: 0 auto;
   padding: 24px;
   box-shadow: none !important;
@@ -125,7 +122,6 @@
   width: 200px !important;
   height: 200px !important;
   margin: 0 auto 24px;
-  //margin-left: auto;
 }
 
 // Section heading
