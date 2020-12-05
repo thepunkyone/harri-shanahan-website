@@ -29,6 +29,6 @@ module.exports = {
     'gatsby-plugin-svgr',
   ],
   siteMetadata: {
-    title: 'Harri Shanahan - Portfolio',
+    siteUrl: 'https://serene-archimedes-c35fea.netlify.app/',
   },
 }

@@ -7,6 +7,8 @@ import Avatar from '@material-ui/core/Avatar'
 import CardComponent from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 
+import useSiteMetadata from '../hooks/use-site-metadata'
+
 import PageTemplate from '../components/templates/PageTemplate'
 import Gallery from '../components/organisms/Gallery'
 import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
@@ -107,8 +109,15 @@ const fakeThumbnails = [
 ]
 
 export default function Index() {
+  const { siteUrl } = useSiteMetadata()
+
   return (
-    <PageTemplate title="Animation. Video. Art. | Harri Shanahan">
+    <PageTemplate
+      title="Animation. Video. Art. | Harri Shanahan"
+      description="I love a creative challenge and helping people achieve their vision. If you’ve got an idea for a great video or animation, I can help you make it a reality. If you need help creating a unique and imaginative concept I can help there, too."
+      image="./images/hero/tumblr.png?nf_resize=fit&w=1200"
+      absoluteUrl={siteUrl}
+    >
       <Container maxWidth={false} disableGutters className={styles.hero}>
         <img
           className={styles.heroImage}
