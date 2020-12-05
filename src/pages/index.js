@@ -25,12 +25,12 @@ const fakeThumbnails = [
   />,
   <GalleryThumbnail
     title="Nervous Twitch - Alright Lads?"
-    image="./images/home-gallery/alright-lads.png"
+    image="./images/home-gallery/alright-lads.jpg"
     url="/"
   />,
   <GalleryThumbnail
     title="ILL - Space Dick"
-    image="./images/home-gallery/space-dick-still.png"
+    image="./images/home-gallery/space-dick-still.jpg"
     url="/"
     video
   />,
@@ -42,18 +42,18 @@ const fakeThumbnails = [
   />,
   <GalleryThumbnail
     title="An Invitation to My Demon Sister"
-    image="./images/home-gallery/demon-sister-still.png"
+    image="./images/home-gallery/demon-sister-still.jpg"
     url="/"
     video
   />,
   <GalleryThumbnail
     title="Rebel Dykes"
-    image="./images/home-gallery/rebel-dykes-still.png"
+    image="./images/home-gallery/rebel-dykes-still.jpg"
     url="/"
   />,
   <GalleryThumbnail
     title="ILL - ILL Song"
-    image="./images/home-gallery/ill-song-still.png"
+    image="./images/home-gallery/ill-song-still.jpg"
     url="/"
     video
   />,
@@ -71,7 +71,7 @@ const fakeThumbnails = [
   />,
   <GalleryThumbnail
     title="The Happy Soul - I Heard it Said"
-    image="./images/home-gallery/the-happy-soul-still.png"
+    image="./images/home-gallery/the-happy-soul-still.jpg"
     url="/"
     video
   />,
@@ -83,31 +83,31 @@ const fakeThumbnails = [
   />,
   <GalleryThumbnail
     title="Bobbie Peru - I am Contagious"
-    image="./images/home-gallery/bobbie-peru-still.png"
+    image="./images/home-gallery/bobbie-peru-still.jpg"
     url="/"
     video
   />,
   <GalleryThumbnail
     title="Italians Want the Monarchy Back"
-    image="./images/home-gallery/italians-want-the-monarchy-back-still.png"
+    image="./images/home-gallery/italians-want-the-monarchy-back-still.jpg"
     url="/"
     video
   />,
   <GalleryThumbnail
     title="Radio Partizan - Breaking News"
-    image="./images/home-gallery/radio-partizan-still.png"
+    image="./images/home-gallery/radio-partizan-still.jpg"
     url="/"
     video
   />,
   <GalleryThumbnail
     title="ILL - Kick Him out the Disco"
-    image="./images/home-gallery/kick-him-out-the-disco-still.png"
+    image="./images/home-gallery/kick-him-out-the-disco-still.jpg"
     url="/"
     video
   />,
   <GalleryThumbnail
     title="One One Three"
-    image="./images/home-gallery/one-one-three-still.png"
+    image="./images/home-gallery/one-one-three-still.jpg"
     url="/"
     video
   />,
@@ -120,14 +120,14 @@ export default function Index() {
     <PageTemplate
       title="Animation. Video. Art. | Harri Shanahan"
       description="I love a creative challenge and helping people achieve their vision. If you’ve got an idea for a great video or animation, I can help you make it a reality. If you need help creating a unique and imaginative concept I can help there, too."
-      image="./images/hero/tumblr.png?nf_resize=fit&w=1200"
+      image="./images/hero/my-hero.jpg?nf_resize=fit&w=1200"
       absoluteUrl={siteUrl}
     >
       <Container maxWidth={false} disableGutters className={styles.hero}>
         <img
           className={styles.heroImage}
           alt="Cycling girl dressed as a fairy tale knight"
-          src="./images/hero/tumblr.png"
+          src="./images/hero/my-hero.jpg"
         />
         <Typography variant="h1" component="h1" className={styles.heroHeading}>
           <span>Animation.</span>
