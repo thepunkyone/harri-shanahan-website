@@ -2,10 +2,12 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div>
-      Hello
+    <section>
       <div>hiya</div>
-    </div>
+      <div>ho</div>
+      <div>la</div>
+      <div>snoo</div>
+    </section>
   )
 }
 
