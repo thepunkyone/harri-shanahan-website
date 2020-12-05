@@ -11,16 +11,14 @@ import Link from '../../atoms/Link'
 import styles from './galleryThumbnail.module.scss'
 
 const GalleryThumbnail = ({ title, url, image, video, isGif }) => {
-  const fallbackImageSource = isGif
-    ? image
-    : `${image}?nf_resize=smartcrop&w=866&h=866`
+  const fallbackImageSource = isGif ? image : `${image}?nf_resize=fit&h=433`
 
   const sources = [
     {
       id: 'desktop',
       srcSet: isGif
         ? image
-        : `${image}?nf_resize=smartcrop&w=290&h=290 1x, ${image}?nf_resize=smartcrop&w=580&h=580 2x`,
+        : `${image}?nf_resize=fit&h=290 1x, ${image}?nf_resize=fit&h=580 2x`,
       media: '(min-width: 481px)',
       type: sourceImageType(image),
     },
@@ -28,7 +26,7 @@ const GalleryThumbnail = ({ title, url, image, video, isGif }) => {
       id: 'mobile',
       srcSet: isGif
         ? image
-        : `${image}?nf_resize=smartcrop&w=433&h=433 1x, ${image}?nf_resize=smartcrop&w=866&h=866 2x`,
+        : `${image}?nf_resize=fit&h=433 1x, ${image}?nf_resize=fit&h=866 2x`,
       media: '(max-width: 480px)',
       type: sourceImageType(image),
     },
