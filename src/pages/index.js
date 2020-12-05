@@ -21,6 +21,7 @@ const fakeThumbnails = [
     title="My Hero"
     image="./images/home-gallery/my-hero-2.gif"
     url="/"
+    isGif
   />,
   <GalleryThumbnail
     title="Nervous Twitch - Alright Lads?"
@@ -37,6 +38,7 @@ const fakeThumbnails = [
     title="My Hero"
     image="./images/home-gallery/my-hero-1.gif"
     url="/"
+    isGif
   />,
   <GalleryThumbnail
     title="An Invitation to My Demon Sister"
@@ -59,11 +61,13 @@ const fakeThumbnails = [
     title="Iggy Pop Howling at the Moon"
     image="./images/home-gallery/iggy-pop.gif"
     url="/"
+    isGif
   />,
   <GalleryThumbnail
     title="Gig!"
     image="./images/home-gallery/gig.gif"
     url="/"
+    isGif
   />,
   <GalleryThumbnail
     title="The Happy Soul - I Heard it Said"
@@ -75,6 +79,7 @@ const fakeThumbnails = [
     title="Walking Woman"
     image="./images/home-gallery/walking-woman.gif"
     url="/"
+    isGif
   />,
   <GalleryThumbnail
     title="Bobbie Peru - I am Contagious"

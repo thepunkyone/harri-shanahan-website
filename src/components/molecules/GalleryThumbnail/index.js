@@ -10,19 +10,25 @@ import Link from '../../atoms/Link'
 
 import styles from './galleryThumbnail.module.scss'
 
-const GalleryThumbnail = ({ title, url, image, video }) => {
-  const fallbackImageSource = `${image}?nf_resize=smartcrop&w=866&h=866`
+const GalleryThumbnail = ({ title, url, image, video, isGif }) => {
+  const fallbackImageSource = isGif
+    ? image
+    : `${image}?nf_resize=smartcrop&w=866&h=866`
 
   const sources = [
     {
       id: 'desktop',
-      srcSet: `${image}?nf_resize=smartcrop&w=290&h=290 1x, ${image}?nf_resize=smartcrop&w=580&h=580 2x`,
+      srcSet: isGif
+        ? image
+        : `${image}?nf_resize=smartcrop&w=290&h=290 1x, ${image}?nf_resize=smartcrop&w=580&h=580 2x`,
       media: '(min-width: 481px)',
       type: sourceImageType(image),
     },
     {
       id: 'mobile',
-      srcSet: `${image}?nf_resize=smartcrop&w=433&h=433 1x, ${image}?nf_resize=smartcrop&w=866&h=866 2x`,
+      srcSet: isGif
+        ? image
+        : `${image}?nf_resize=smartcrop&w=433&h=433 1x, ${image}?nf_resize=smartcrop&w=866&h=866 2x`,
       media: '(max-width: 480px)',
       type: sourceImageType(image),
     },
@@ -53,6 +59,7 @@ GalleryThumbnail.propTypes = {
   url: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   video: PropTypes.bool,
+  isGif: PropTypes.bool,
 }
 
 export default GalleryThumbnail

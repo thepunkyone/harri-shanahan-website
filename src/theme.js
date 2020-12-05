@@ -10,6 +10,7 @@ const customTheme = createMuiTheme({
     },
     secondary: {
       main: '#027b84',
+      light: '#80cbc4',
       contrastText: '#f7f0ea',
     },
     error: {

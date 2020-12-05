@@ -6,4 +6,8 @@ export default {
   title: 'Organisms/Services',
 }
 
-export const defaultServices = () => <Services />
+export const defaultServices = () => (
+  <div style={{ backgroundColor: '#80cbc4', padding: '20px' }}>
+    <Services />
+  </div>
+)

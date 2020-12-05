@@ -1,0 +1,21 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Services
+// ==========================================================================
+
+.services {
+  display: grid;
+  grid-gap: gutter(4);
+
+  @include above(medium) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.service {
+  padding: gutter(2.5);
+  background-color: rgba($colour-white, 0.2);
+  border-radius: gutter(1);
+}
