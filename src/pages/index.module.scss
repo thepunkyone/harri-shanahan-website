@@ -35,7 +35,7 @@
   left: 50%;
   top: 50%;
   //color: #f7f0ea;
-  color: #80cbc4;
+  color: $colour-secondary-light;
   font-size: 70px;
   letter-spacing: 0.2em;
   line-height: 1.5em !important;
@@ -128,9 +128,57 @@
   //margin-left: auto;
 }
 
-// Gallery section
+// Section heading
 
-.gallerySection {
-  padding-top: 150px;
-  padding-bottom: 200px;
+.sectionHeading {
+  margin-bottom: gutter(6) !important;
 }
+
+// Showreel section
+
+.showreelSection {
+  margin-top: -100px;
+  padding-top: 200px;
+  padding-bottom: 120px;
+  background-color: $colour-grey-alpha;
+}
+
+// Portfolio section
+
+.portfolioSection {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: $colour-white;
+  margin-bottom: 150px;
+
+  &::after {
+    position: absolute;
+    top: calc(100% - 100px);
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: $colour-white;
+    mask-image: url('../svgs/patterns/bottom-wave.svg');
+    mask-position: bottom;
+    mask-repeat: no-repeat;
+    mask-size: 100% 600px;
+  }
+}
+
+.portfolioGallery {
+  position: relative;
+  z-index: 5;
+}
+
+// Services section
+
+.servicesSection {
+  margin-top: -100px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-color: $colour-secondary-light;
+}
+

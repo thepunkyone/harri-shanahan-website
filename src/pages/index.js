@@ -6,12 +6,13 @@ import Button from '@material-ui/core/Button'
 import Avatar from '@material-ui/core/Avatar'
 import CardComponent from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
-import Gallery from '../components/organisms/Gallery'
 
 import PageTemplate from '../components/templates/PageTemplate'
+import Gallery from '../components/organisms/Gallery'
+import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
+import VideoEmbed from '../components/atoms/VideoEmbed'
 
 import styles from './index.module.scss'
-import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
 
 const fakeThumbnails = [
   <GalleryThumbnail
@@ -170,8 +171,46 @@ export default function Index() {
           </Box>
         </Container>
       </Container>
-      <Container maxWidth="lg" className={styles.gallerySection}>
-        <Gallery thumbnails={fakeThumbnails} />
+      <Container maxWidth={false} className={styles.showreelSection}>
+        <Container maxWidth="lg" disableGutters>
+          <Typography
+            className={styles.sectionHeading}
+            variant="h3"
+            component="h2"
+            align="center"
+            color="secondary"
+          >
+            Animation Showreel
+          </Typography>
+          <VideoEmbed
+            videoTitle="Animation Showreel"
+            videoUrl="https://player.vimeo.com/video/229623427?autoplay=0&title=0&portrait=0&byline=0&color=027b84"
+          />
+        </Container>
+      </Container>
+      <Container maxWidth={false} className={styles.portfolioSection}>
+        <Container maxWidth="lg" disableGutters>
+          <Typography
+            className={styles.sectionHeading}
+            variant="h3"
+            component="h2"
+            align="center"
+            color="secondary"
+          >
+            Portfolio
+          </Typography>
+          <Gallery
+            className={styles.portfolioGallery}
+            thumbnails={fakeThumbnails}
+          />
+        </Container>
+      </Container>
+      <Container maxWidth={false} className={styles.servicesSection}>
+        <Container maxWidth="lg" disableGutters>
+          <Typography variant="h2" component="h2" align="center">
+            My Services
+          </Typography>
+        </Container>
       </Container>
     </PageTemplate>
   )
