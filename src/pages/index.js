@@ -15,65 +15,91 @@ import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
 
 const fakeThumbnails = [
   <GalleryThumbnail
-    title="Picture 1"
-    image="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+    title="My Hero"
+    image="./images/home-gallery/my-hero-2.gif"
     url="/"
   />,
   <GalleryThumbnail
-    title="Picture 2"
-    image="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+    title="Nervous Twitch - Alright Lads?"
+    image="./images/home-gallery/alright-lads.png"
     url="/"
   />,
   <GalleryThumbnail
-    title="Picture 3"
-    image="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=719&q=80"
-    url="/"
-    video
-  />,
-  <GalleryThumbnail
-    title="Picture 4"
-    image="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
-    url="/"
-  />,
-  <GalleryThumbnail
-    title="Picture 5"
-    image="https://images.unsplash.com/photo-1508913449378-01b9b8174e46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
-    url="/"
-  />,
-  <GalleryThumbnail
-    title="Picture 6"
-    image="https://images.unsplash.com/photo-1535224206242-487f7090b5bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
-    url="/"
-  />,
-  <GalleryThumbnail
-    title="Picture 7"
-    image="https://images.unsplash.com/photo-1474401915596-3c5adf84ef01?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
-    url="/"
-  />,
-  <GalleryThumbnail
-    title="Picture 8"
-    image="https://images.unsplash.com/photo-1504870712357-65ea720d6078?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80"
+    title="ILL - Space Dick"
+    image="./images/home-gallery/space-dick-still.png"
     url="/"
     video
   />,
   <GalleryThumbnail
-    title="Picture 9"
-    image="https://images.unsplash.com/photo-1462480803487-a2edfd796460?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+    title="My Hero"
+    image="./images/home-gallery/my-hero-1.gif"
     url="/"
   />,
   <GalleryThumbnail
-    title="Picture 10"
-    image="https://images.unsplash.com/photo-1462486387766-dcf408d34ece?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=564&q=80"
+    title="An Invitation to My Demon Sister"
+    image="./images/home-gallery/demon-sister-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="Rebel Dykes"
+    image="./images/home-gallery/rebel-dykes-still.png"
     url="/"
   />,
   <GalleryThumbnail
-    title="Picture 11"
-    image="https://images.unsplash.com/photo-1452621946466-c0f2ff2ff100?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1049&q=80"
+    title="ILL - ILL Song"
+    image="./images/home-gallery/ill-song-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="Iggy Pop Howling at the Moon"
+    image="./images/home-gallery/iggy-pop.gif"
     url="/"
   />,
   <GalleryThumbnail
-    title="Picture 12"
-    image="https://images.unsplash.com/photo-1518021964703-4b2030f03085?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1053&q=80"
+    title="Gig!"
+    image="./images/home-gallery/gig.gif"
+    url="/"
+  />,
+  <GalleryThumbnail
+    title="The Happy Soul - I Heard it Said"
+    image="./images/home-gallery/the-happy-soul-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="Walking Woman"
+    image="./images/home-gallery/walking-woman.gif"
+    url="/"
+  />,
+  <GalleryThumbnail
+    title="Bobbie Peru - I am Contagious"
+    image="./images/home-gallery/bobbie-peru-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="Italians Want the Monarchy Back"
+    image="./images/home-gallery/italians-want-the-monarchy-back-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="Radio Partizan - Breaking News"
+    image="./images/home-gallery/radio-partizan-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="ILL - Kick Him out the Disco"
+    image="./images/home-gallery/kick-him-out-the-disco-still.png"
+    url="/"
+    video
+  />,
+  <GalleryThumbnail
+    title="One One Three"
+    image="./images/home-gallery/one-one-three-still.png"
     url="/"
     video
   />,
@@ -86,7 +112,7 @@ export default function Index() {
         <img
           className={styles.heroImage}
           alt="Cycling girl dressed as a fairy tale knight"
-          src="./images/tumblr.png"
+          src="./images/hero/tumblr.png"
         />
         <Typography variant="h1" component="h1" className={styles.heroHeading}>
           <span>Animation.</span>
