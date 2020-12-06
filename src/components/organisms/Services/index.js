@@ -1,5 +1,11 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
+import {
+  TheatersRounded,
+  MovieFilterRounded,
+  EmojiEmotionsRounded,
+  CameraRounded,
+} from '@material-ui/icons'
 
 import styles from './services.module.scss'
 
@@ -7,10 +13,16 @@ const Services = () => {
   return (
     <section className={styles.services}>
       <div className={styles.service}>
-        <Typography variant="h4" component="h4">
+        <TheatersRounded className={styles.icon} />
+        <Typography
+          variant="h4"
+          component="h4"
+          align="center"
+          className={styles.heading}
+        >
           Video editing
         </Typography>
-        <Typography variant="body2" component="ul">
+        <Typography variant="body2" component="ul" className={styles.list}>
           <li>Organise your raw footage</li>
           <li>Assemble your footage into a great story</li>
           <li>
@@ -21,10 +33,16 @@ const Services = () => {
         </Typography>
       </div>
       <div className={styles.service}>
-        <Typography variant="h4" component="h4">
+        <MovieFilterRounded className={styles.icon} />
+        <Typography
+          variant="h4"
+          component="h4"
+          align="center"
+          className={styles.heading}
+        >
           VFX
         </Typography>
-        <Typography variant="body2" component="ul">
+        <Typography variant="body2" component="ul" className={styles.list}>
           <li>
             Professional and accurate chroma keying (taking out green screen
             backgrounds)
@@ -37,10 +55,16 @@ const Services = () => {
         </Typography>
       </div>
       <div className={styles.service}>
-        <Typography variant="h4" component="h4">
+        <EmojiEmotionsRounded className={styles.icon} />
+        <Typography
+          variant="h4"
+          component="h4"
+          align="center"
+          className={styles.heading}
+        >
           Animation
         </Typography>
-        <Typography variant="body2" component="ul">
+        <Typography variant="body2" component="ul" className={styles.list}>
           <li>Make your character design into an animated character (2D)</li>
           <li>
             Create short engaging animations to your brief Animate your company
@@ -51,10 +75,16 @@ const Services = () => {
         </Typography>
       </div>
       <div className={styles.service}>
-        <Typography variant="h4" component="h4">
+        <CameraRounded className={styles.icon} />
+        <Typography
+          variant="h4"
+          component="h4"
+          align="center"
+          className={styles.heading}
+        >
           Production
         </Typography>
-        <Typography variant="body2" component="ul">
+        <Typography variant="body2" component="ul" className={styles.list}>
           <li>Filming (can provide a 2 person team)</li>
           <li>Sound recording</li>
           <li>Lighting for camera</li>

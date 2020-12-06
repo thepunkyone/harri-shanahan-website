@@ -16,7 +16,37 @@
 }
 
 .service {
-  padding: gutter(2.5);
+  padding: gutter(2.5) gutter(4) gutter(4) gutter(3.75);
   background-color: rgba($colour-white, 0.2);
   border-radius: gutter(1);
+}
+
+// Icon
+
+.icon {
+  font-size: 80px !important;
+  display: block !important;
+  margin: 0 auto gutter(2);
+  color: $colour-secondary;
+}
+
+// Heading
+
+.heading {
+  color: $colour-secondary-extra-dark !important;
+  margin-bottom: gutter(1.5) !important;
+}
+
+// List
+
+.list {
+  padding-left: gutter(2.75);
+
+  li {
+    margin-bottom: 0.4em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
