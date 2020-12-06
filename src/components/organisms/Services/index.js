@@ -14,12 +14,7 @@ const Services = () => {
     <section className={styles.services}>
       <div className={styles.service}>
         <TheatersRounded className={styles.icon} />
-        <Typography
-          variant="h4"
-          component="h4"
-          align="center"
-          className={styles.heading}
-        >
+        <Typography variant="h4" component="h4" className={styles.heading}>
           Video editing
         </Typography>
         <Typography variant="body2" component="ul" className={styles.list}>
@@ -34,12 +29,7 @@ const Services = () => {
       </div>
       <div className={styles.service}>
         <MovieFilterRounded className={styles.icon} />
-        <Typography
-          variant="h4"
-          component="h4"
-          align="center"
-          className={styles.heading}
-        >
+        <Typography variant="h4" component="h4" className={styles.heading}>
           VFX
         </Typography>
         <Typography variant="body2" component="ul" className={styles.list}>
@@ -56,12 +46,7 @@ const Services = () => {
       </div>
       <div className={styles.service}>
         <EmojiEmotionsRounded className={styles.icon} />
-        <Typography
-          variant="h4"
-          component="h4"
-          align="center"
-          className={styles.heading}
-        >
+        <Typography variant="h4" component="h4" className={styles.heading}>
           Animation
         </Typography>
         <Typography variant="body2" component="ul" className={styles.list}>
@@ -76,12 +61,7 @@ const Services = () => {
       </div>
       <div className={styles.service}>
         <CameraRounded className={styles.icon} />
-        <Typography
-          variant="h4"
-          component="h4"
-          align="center"
-          className={styles.heading}
-        >
+        <Typography variant="h4" component="h4" className={styles.heading}>
           Production
         </Typography>
         <Typography variant="body2" component="ul" className={styles.list}>

@@ -7,40 +7,89 @@
 .services {
   display: grid;
   grid-gap: gutter(4);
-  align-items: start;
 
-  @include above(medium) {
+  @include above(large) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+  }
+
+  @include above(xxlarge) {
+    grid-gap: gutter(6);
   }
 }
 
 .service {
-  padding: gutter(2.5) gutter(4) gutter(4) gutter(3.75);
-  background-color: rgba($colour-white, 0.2);
+  position: relative;
+  padding: gutter(4) gutter(4) gutter(5);
+  background-color: rgba($colour-white, 0.4);
   border-radius: gutter(1);
+  overflow: hidden;
+
+  @include below(small) {
+    padding: gutter(3) gutter(3) gutter(3.25);
+  }
 }
 
 // Icon
 
 .icon {
-  font-size: 80px !important;
+  @include transition();
+
+  position: absolute;
+  top: -42px;
+  right: -40px;
+  font-size: 200px !important;
   display: block !important;
   margin: 0 auto gutter(2);
-  color: $colour-secondary;
+  color: darken($colour-secondary-light, 10%);
+
+  @include below(xsmall) {
+    display: none !important;
+  }
+
+  @include between(xsmall, small) {
+    font-size: 150px !important;
+    top: -34px;
+    right: -34px;
+  }
+
+  @include between(large, 1080px) {
+    font-size: 150px !important;
+    top: -34px;
+    right: -34px;
+  }
 }
 
 // Heading
 
 .heading {
+  position: relative;
   color: $colour-secondary-extra-dark !important;
-  margin-bottom: gutter(1.5) !important;
+  margin-bottom: gutter(2) !important;
 }
 
 // List
 
 .list {
+  position: relative;
   padding-left: gutter(2.75);
+
+  @include between(xsmall, small) {
+    max-width: calc(100% - 90px);
+  }
+
+  @include between(small, large) {
+    max-width: calc(100% - 130px);
+  }
+
+  @include between(large, 1080px) {
+    max-width: calc(100% - 90px);
+  }
+
+  @include above(1080px) {
+    max-width: calc(100% - 130px);
+  }
+
 
   li {
     margin-bottom: 0.4em;

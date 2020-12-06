@@ -14,6 +14,7 @@ import Gallery from '../components/organisms/Gallery'
 import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
 import GalleryThumbnailGif from '../components/molecules/GalleryThumbnailGif'
 import VideoEmbed from '../components/atoms/VideoEmbed'
+import Services from '../components/organisms/Services'
 
 import styles from './index.module.scss'
 
@@ -217,9 +218,15 @@ export default function Index() {
       </Container>
       <Container maxWidth={false} className={styles.servicesSection}>
         <Container maxWidth="lg" disableGutters>
-          <Typography variant="h2" component="h2" align="center">
+          <Typography
+            variant="h2"
+            component="h2"
+            align="center"
+            className={styles.servicesHeading}
+          >
             My Services
           </Typography>
+          <Services />
         </Container>
       </Container>
     </PageTemplate>

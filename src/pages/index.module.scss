@@ -103,9 +103,17 @@
 
   @include above(large) {
     width: 50%;
+  }
 
+  @include between(large, xxlarge) {
     &:first-of-type {
-      margin-right: 64px;
+      margin-right: gutter(4);
+    }
+  }
+
+  @include above(xxlarge) {
+    &:first-of-type {
+      margin-right: gutter(6);
     }
   }
 }
@@ -176,5 +184,9 @@
   padding-top: 200px;
   padding-bottom: 100px;
   background-color: $colour-secondary-light;
+}
+
+.servicesHeading {
+  margin-bottom: gutter(8) !important;
 }
 
