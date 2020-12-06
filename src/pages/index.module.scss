@@ -119,12 +119,28 @@
 }
 
 .welcomeSectionCard {
-  background-color: rgba($colour-white, 0.1) !important;
+  position: relative;
+  background-color: rgba($colour-white, 0.4) !important;
   margin: 0 auto;
-  padding: 24px;
+  padding: gutter(3);
   box-shadow: none !important;
-  border-radius: 16px !important;
+  border-radius: gutter(1) !important;
+
+  //&::after {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  content: '';
+  //  display: block;
+  //  width: 100%;
+  //  height: 100%;
+  //}
 }
+//
+//.welcomeSectionCardContent {
+//  position: relative;
+//  z-index: 5;
+//}
 
 .avatarLarge{
   width: 200px !important;
@@ -155,6 +171,7 @@
   padding-bottom: 80px;
   background-color: $colour-white;
   margin-bottom: 150px;
+  z-index: 5;
 
   &::after {
     position: absolute;
@@ -180,13 +197,34 @@
 // Services section
 
 .servicesSection {
+  position: relative;
   margin-top: -100px;
   padding-top: 200px;
   padding-bottom: 100px;
   background-color: $colour-secondary-light;
+
+  &::after {
+    position: absolute;
+    top: calc(100% - 100px);
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: $colour-secondary-light;
+    mask-image: url('../svgs/patterns/bottom-wave.svg');
+    mask-position: bottom;
+    mask-repeat: no-repeat;
+    mask-size: 100% 600px;
+  }
 }
 
 .servicesHeading {
   margin-bottom: gutter(8) !important;
 }
 
+.contactSection {
+  background-color: $colour-secondary;
+  padding-top: 250px;
+  padding-bottom: 100px;
+}

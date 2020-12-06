@@ -160,7 +160,7 @@ export default function Index() {
           </Box>
           <Box my={4} className={styles.welcomeSectionColumn}>
             <CardComponent className={styles.welcomeSectionCard}>
-              <CardContent>
+              <CardContent className={styles.welcomeSectionCardContent}>
                 <Avatar
                   className={styles.avatarLarge}
                   alt="Harri Shanahan"
@@ -227,6 +227,13 @@ export default function Index() {
             My Services
           </Typography>
           <Services />
+        </Container>
+      </Container>
+      <Container maxWidth={false} className={styles.contactSection}>
+        <Container maxWidth="lg">
+          <Typography variant="h2" component="h2" align="center">
+            Get in touch
+          </Typography>
         </Container>
       </Container>
     </PageTemplate>
