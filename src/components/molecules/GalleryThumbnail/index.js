@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
 import { PlayCircleFilledRounded } from '@material-ui/icons'
+import { CircularProgress } from '@material-ui/core'
 
 import sourceImageType from '../../../utils/sourceImageType'
 
@@ -35,6 +36,9 @@ const GalleryThumbnail = ({ title, url, image, video, isGif }) => {
   return (
     <Link className={styles.thumbnail} href={url}>
       <article>
+        <span className={styles.spinner}>
+          <CircularProgress color="secondary" />
+        </span>
         <Picture
           alt={title}
           src={fallbackImageSource}
