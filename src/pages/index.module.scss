@@ -92,7 +92,8 @@
   &:first-of-type {
     :global(.MuiButton-root) {
       display: block;
-      margin-top: 32px;
+      min-width: 220px;
+      margin-top: gutter(4);
       font-size: 1em;
     }
   }
