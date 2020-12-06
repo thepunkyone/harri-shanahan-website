@@ -12,16 +12,16 @@ import useSiteMetadata from '../hooks/use-site-metadata'
 import PageTemplate from '../components/templates/PageTemplate'
 import Gallery from '../components/organisms/Gallery'
 import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
+import GalleryThumbnailGif from '../components/molecules/GalleryThumbnailGif'
 import VideoEmbed from '../components/atoms/VideoEmbed'
 
 import styles from './index.module.scss'
 
 const fakeThumbnails = [
-  <GalleryThumbnail
+  <GalleryThumbnailGif
     title="My Hero"
-    image="./images/home-gallery/my-hero-2.gif"
+    video="./images/home-gallery/my-hero-2.mp4"
     url="/"
-    isGif
   />,
   <GalleryThumbnail
     title="Nervous Twitch - Alright Lads?"
@@ -32,19 +32,18 @@ const fakeThumbnails = [
     title="ILL - Space Dick"
     image="./images/home-gallery/space-dick-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
-  <GalleryThumbnail
+  <GalleryThumbnailGif
     title="My Hero"
-    image="./images/home-gallery/my-hero-1.gif"
+    video="./images/home-gallery/my-hero-1.mp4"
     url="/"
-    isGif
   />,
   <GalleryThumbnail
     title="An Invitation to My Demon Sister"
     image="./images/home-gallery/demon-sister-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
   <GalleryThumbnail
     title="Rebel Dykes"
@@ -55,19 +54,17 @@ const fakeThumbnails = [
     title="ILL - ILL Song"
     image="./images/home-gallery/ill-song-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
-  <GalleryThumbnail
+  <GalleryThumbnailGif
     title="Iggy Pop Howling at the Moon"
-    image="./images/home-gallery/iggy-pop.gif"
+    video="./images/home-gallery/iggy-pop.mp4"
     url="/"
-    isGif
   />,
-  <GalleryThumbnail
+  <GalleryThumbnailGif
     title="Gig!"
-    image="./images/home-gallery/gig.gif"
+    video="./images/home-gallery/gig.mp4"
     url="/"
-    isGif
   />,
   <GalleryThumbnail
     title="The Happy Soul - I Heard it Said"
@@ -75,41 +72,40 @@ const fakeThumbnails = [
     url="/"
     video
   />,
-  <GalleryThumbnail
+  <GalleryThumbnailGif
     title="Walking Woman"
-    image="./images/home-gallery/walking-woman.gif"
+    video="./images/home-gallery/walking-woman.mp4"
     url="/"
-    isGif
   />,
   <GalleryThumbnail
     title="Bobbie Peru - I am Contagious"
     image="./images/home-gallery/bobbie-peru-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
   <GalleryThumbnail
     title="Italians Want the Monarchy Back"
     image="./images/home-gallery/italians-want-the-monarchy-back-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
   <GalleryThumbnail
     title="Radio Partizan - Breaking News"
     image="./images/home-gallery/radio-partizan-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
   <GalleryThumbnail
     title="ILL - Kick Him out the Disco"
     image="./images/home-gallery/kick-him-out-the-disco-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
   <GalleryThumbnail
     title="One One Three"
     image="./images/home-gallery/one-one-three-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
 ]
 
