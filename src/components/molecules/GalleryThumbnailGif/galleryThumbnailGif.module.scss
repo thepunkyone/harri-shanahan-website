@@ -16,14 +16,19 @@
   overflow: hidden;
 
   video {
+    @include transition;
+
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 101%;
-    height: 101%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    transform: translate(-50%, -50%);
-    margin: -1px;
+    transform: scale(1.01) translate(-50%, -50%);
+  }
+
+  &:hover video {
+    transform: scale(1.03) translate(-50%, -50%) translateZ(0);
   }
 }
 

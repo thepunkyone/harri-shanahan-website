@@ -70,7 +70,7 @@ const fakeThumbnails = [
     title="The Happy Soul - I Heard it Said"
     image="./images/home-gallery/the-happy-soul-still.jpg"
     url="/"
-    video
+    linkToVideo
   />,
   <GalleryThumbnailGif
     title="Walking Woman"
