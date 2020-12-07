@@ -51,10 +51,8 @@ const Services = () => {
         </Typography>
         <Typography variant="body2" component="ul" className={styles.list}>
           <li>Make your character design into an animated character (2D)</li>
-          <li>
-            Create short engaging animations to your brief Animate your company
-            logo
-          </li>
+          <li>Create short engaging animations to your brief</li>
+          <li>Animate your company logo</li>
           <li>Make an appealing loading screen for your app or site</li>
           <li>…and more! Ask me.</li>
         </Typography>

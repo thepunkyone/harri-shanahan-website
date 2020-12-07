@@ -256,7 +256,7 @@ export default function Index() {
             color="textSecondary"
             align="center"
           >
-            I am looking forward to hearing from you.
+            I look forward to hearing from you.
           </Typography>
           <ContactForm className={styles.contactForm} />
         </Container>
