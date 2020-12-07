@@ -144,9 +144,10 @@
 //}
 
 .avatarLarge{
-  width: 200px !important;
-  height: 200px !important;
+  width: 224px !important;
+  height: 224px !important;
   margin: 0 auto 24px;
+  border: 6px solid $colour-secondary-light;
 }
 
 // Section heading
@@ -224,8 +225,27 @@
   margin-bottom: gutter(8) !important;
 }
 
+// Contact section
+
 .contactSection {
-  background-color: $colour-secondary;
+  background-color: $colour-grey-alpha;
   padding-top: 250px;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
+}
+
+.contactSectionHeading {
+  margin-bottom: gutter(3) !important;
+}
+
+
+.contactSectionSubheading {
+  margin: 0 auto gutter(6);
+
+  &:last-of-type {
+    margin-bottom: gutter(6) !important;
+  }
+}
+
+.contactForm {
+  margin: 0 auto;
 }

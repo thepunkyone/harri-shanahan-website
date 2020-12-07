@@ -15,6 +15,7 @@ import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
 import GalleryThumbnailGif from '../components/molecules/GalleryThumbnailGif'
 import VideoEmbed from '../components/atoms/VideoEmbed'
 import Services from '../components/organisms/Services'
+import ContactForm from '../components/organisms/ContactForm'
 
 import styles from './index.module.scss'
 
@@ -231,9 +232,33 @@ export default function Index() {
       </Container>
       <Container maxWidth={false} className={styles.contactSection}>
         <Container maxWidth="lg">
-          <Typography variant="h2" component="h2" align="center">
+          <Typography
+            variant="h2"
+            component="h2"
+            align="center"
+            className={styles.contactSectionHeading}
+          >
             Get in touch
           </Typography>
+          <Typography
+            className={styles.contactSectionSubheading}
+            variant="body2"
+            component="p"
+            color="textSecondary"
+            align="center"
+          >
+            Have an idea, a project, a job offer or a question?
+          </Typography>
+          <Typography
+            className={styles.contactSectionSubheading}
+            variant="body2"
+            component="p"
+            color="textSecondary"
+            align="center"
+          >
+            I am looking forward to hearing from you.
+          </Typography>
+          <ContactForm className={styles.contactForm} />
         </Container>
       </Container>
     </PageTemplate>

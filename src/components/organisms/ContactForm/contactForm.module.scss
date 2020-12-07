@@ -1,0 +1,27 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Contact form
+// ==========================================================================
+
+.form {
+  max-width: 500px;
+}
+
+.field {
+  margin-bottom: gutter(3) !important;
+}
+
+.textArea {
+  margin-bottom: gutter(4) !important;
+
+  textarea {
+    min-height: 200px;
+  }
+}
+
+.submitButton {
+  display: block !important;
+  width: 100% !important;
+  font-size: 1em !important;
+}
