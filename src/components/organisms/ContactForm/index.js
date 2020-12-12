@@ -12,6 +12,29 @@ const ContactForm = ({ className, postContactForm }) => {
   const [showSuccessNotification, setShowSuccessNotification] = useState(false)
   const [showErrorNotification, setShowErrorNotification] = useState(false)
 
+  const onFormSubmit = async (e) => {
+    e.preventDefault()
+    setShowErrorNotification(false)
+    setSubmittingForm(true)
+
+    const { name, email, phoneNumber, message, _honeypot } = e.target.elements
+    const response = await postContactForm({
+      name: name.value,
+      email: email.value,
+      phoneNumber: phoneNumber.value,
+      message: message.value,
+      _honeypot: _honeypot.checked,
+    })
+
+    if (response.success) {
+      setShowSuccessNotification(true)
+    } else {
+      setShowErrorNotification(true)
+    }
+
+    setSubmittingForm(false)
+  }
+
   if (showSuccessNotification) {
     return (
       <div
@@ -46,34 +69,7 @@ const ContactForm = ({ className, postContactForm }) => {
   return (
     <form
       className={classNames(styles.form, className)}
-      onSubmit={async (e) => {
-        e.preventDefault()
-        setShowErrorNotification(false)
-        setSubmittingForm(true)
-
-        const {
-          name,
-          email,
-          phoneNumber,
-          message,
-          _honeypot,
-        } = e.target.elements
-        const response = await postContactForm({
-          name: name.value,
-          email: email.value,
-          phoneNumber: phoneNumber.value,
-          message: message.value,
-          _honeypot: _honeypot.checked,
-        })
-
-        if (response.success) {
-          setShowSuccessNotification(true)
-        } else {
-          setShowErrorNotification(true)
-        }
-
-        setSubmittingForm(false)
-      }}
+      onSubmit={onFormSubmit}
     >
       <TextField
         className={styles.field}
