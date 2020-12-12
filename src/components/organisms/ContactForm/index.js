@@ -51,12 +51,19 @@ const ContactForm = ({ className, postContactForm }) => {
         setShowErrorNotification(false)
         setSubmittingForm(true)
 
-        const { name, email, phoneNumber, message } = e.target.elements
+        const {
+          name,
+          email,
+          phoneNumber,
+          message,
+          _honeypot,
+        } = e.target.elements
         const response = await postContactForm({
           name: name.value,
           email: email.value,
           phoneNumber: phoneNumber.value,
           message: message.value,
+          _honeypot: _honeypot.checked,
         })
 
         if (response.success) {
