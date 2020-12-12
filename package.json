@@ -37,6 +37,7 @@
     "babel-loader": "^8.2.1",
     "babel-preset-gatsby": "^0.7.0",
     "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",

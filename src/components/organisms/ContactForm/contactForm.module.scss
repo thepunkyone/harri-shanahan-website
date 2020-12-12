@@ -8,20 +8,109 @@
   max-width: 500px;
 }
 
+// Field
+
 .field {
   margin-bottom: gutter(3) !important;
+
+  input {
+    background-color: rgb(232, 240, 254);
+  }
 }
+
+// Textarea
 
 .textArea {
   margin-bottom: gutter(4) !important;
+  background-color: rgb(232, 240, 254);
 
   textarea {
     min-height: 200px;
   }
 }
 
+// Honeypot
+
+.fieldHoneypot {
+  @include hidden-visually;
+
+  input, label {
+    @include hidden-visually;
+  }
+}
+
+// Submit button
+
 .submitButton {
   display: block !important;
   width: 100% !important;
   font-size: 1em !important;
+}
+
+// Notifications
+// ==========================================================================
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeindown;
+  animation-name: fadeInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.successNotification, .errorNotification {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: gutter(5);
+  border-radius: gutter(1);
+
+  @include below(small) {
+    padding: gutter(4);
+  }
+}
+
+.successNotification {
+  background-color: lighten($colour-secondary-light, 10%);
+  text-align: center;
+}
+
+.errorNotification {
+  background-color: lighten(#ff1744, 30%);
+  margin-bottom: gutter(4);
+}
+
+.successNotificationHeading {
+  color: $colour-secondary-extra-dark;
 }

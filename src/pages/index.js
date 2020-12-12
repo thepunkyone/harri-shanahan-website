@@ -8,6 +8,7 @@ import CardComponent from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 
 import useSiteMetadata from '../hooks/use-site-metadata'
+import postContactForm from '../api/postContactForm'
 
 import PageTemplate from '../components/templates/PageTemplate'
 import Gallery from '../components/organisms/Gallery'
@@ -231,7 +232,7 @@ export default function Index() {
         </Container>
       </Container>
       <Container maxWidth={false} className={styles.contactSection}>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" disableGutters>
           <Typography
             variant="h2"
             component="h2"
@@ -258,7 +259,10 @@ export default function Index() {
           >
             I look forward to hearing from you.
           </Typography>
-          <ContactForm className={styles.contactForm} />
+          <ContactForm
+            className={styles.contactForm}
+            postContactForm={postContactForm}
+          />
         </Container>
       </Container>
     </PageTemplate>
