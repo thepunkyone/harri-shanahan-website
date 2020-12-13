@@ -6,26 +6,17 @@ import { CircularProgress } from '@material-ui/core'
 
 import Link from '../../atoms/Link'
 import Video from '../../atoms/Video'
-import VideoTest from '../../atoms/Video/test'
 
 import styles from './galleryThumbnailGif.module.scss'
 
 const GalleryThumbnailGif = ({ title, url, video, linkToVideo }) => {
-  const sources = [
-    {
-      src: video,
-      type: 'video/mp4',
-    },
-  ]
-
   return (
     <Link className={styles.thumbnail} href={url}>
       <article>
         <span className={styles.spinner}>
           <CircularProgress color="secondary" />
         </span>
-        <VideoTest />
-        {/*<Video alt={title} sources={sources} />*/}
+        <Video url={video} alt={title} />
         <div className={styles.overlay}>
           <Typography component="h5" variant="h5" className={styles.title}>
             {title}
