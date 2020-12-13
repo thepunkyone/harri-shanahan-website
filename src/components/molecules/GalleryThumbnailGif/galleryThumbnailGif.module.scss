@@ -15,7 +15,7 @@
   -webkit-mask-image: -webkit-radial-gradient(white, black); // Safari border radius fix
   overflow: hidden;
 
-  video {
+  img, video {
     @include transition;
 
     position: absolute;
