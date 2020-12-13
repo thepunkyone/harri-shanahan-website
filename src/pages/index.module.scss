@@ -4,58 +4,15 @@
 // Home page
 // ==========================================================================
 
-// Hero
-.hero {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: '';
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 5;
-  }
-}
-
-.heroImage {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.heroHeading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  color: $colour-secondary-light;
-  font-size: 70px;
-  letter-spacing: 0.2em;
-  line-height: 1.5em !important;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-
-  //@supports (-webkit-background-clip: text) or (background-clip: text) {
-  //  background-image: linear-gradient(to bottom, #a7ffeb, #ffe57f);
-  //  -webkit-background-clip: text;
-  //  background-clip: text;
-  //  color: transparent;
-  //}
-}
+// Welcome section
 
 .welcomeSection {
   position: relative;
-  padding-top: 80px;
-  background-color: #80cbc4;
+  margin-top: -100px;
+  padding-top: 180px;
+  background-color: $colour-secondary-light;
   margin-bottom: 150px;
+  z-index: 0;
 
   &::after {
     position: absolute;
@@ -65,7 +22,7 @@
     display: block;
     width: 100%;
     height: 250px;
-    background-color: #80cbc4;
+    background-color: $colour-secondary-light;
     mask-image: url('../svgs/patterns/bottom-wave.svg');
     mask-position: bottom;
     mask-repeat: no-repeat;

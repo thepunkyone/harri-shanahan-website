@@ -19,7 +19,7 @@ describe('Post contact form', () => {
     delete global.fetch
   })
 
-  it('should call the correct endpoint with the correct url, request headers and body', async () => {
+  it('should call the correct endpoint with the correct url, request method and request headers and body', async () => {
     global.fetch.mockResolvedValueOnce({
       status: 200,
     })
@@ -27,13 +27,14 @@ describe('Post contact form', () => {
     await postContactForm(stubbedFormData)
 
     expect(global.fetch.mock.calls[0][0]).toBe('https://submit-form.com/foo')
-    expect(global.fetch.mock.calls[0][1].body).toBe(
-      JSON.stringify(stubbedFormData)
-    )
+    expect(global.fetch.mock.calls[0][1].method).toBe('POST')
     expect(global.fetch.mock.calls[0][1].headers).toEqual({
       Accept: 'application/json',
       'Content-Type': 'application/json',
     })
+    expect(global.fetch.mock.calls[0][1].body).toBe(
+      JSON.stringify(stubbedFormData)
+    )
   })
 
   it('should return a response with success property set to true if the api responds with a 200 status', async () => {

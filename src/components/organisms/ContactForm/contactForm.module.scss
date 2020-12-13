@@ -14,7 +14,7 @@
   margin-bottom: gutter(3) !important;
 
   input {
-    background-color: rgb(232, 240, 254);
+    background-color: lighten($colour-white, 5%);
   }
 }
 
@@ -22,7 +22,7 @@
 
 .textArea {
   margin-bottom: gutter(4) !important;
-  background-color: rgb(232, 240, 254);
+  background-color: lighten($colour-white, 5%);
 
   textarea {
     min-height: 200px;

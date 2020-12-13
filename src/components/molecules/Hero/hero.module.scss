@@ -1,0 +1,76 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Hero
+// ==========================================================================
+
+.hero {
+  position: relative;
+  width: 100%;
+  padding-top: calc(100vh - 64px);
+  background-color: $colour-secondary-light;
+  mask-image: url('../../../svgs/patterns/bottom-wave.svg');
+  mask-position: 15% 100%;
+  mask-repeat: no-repeat;
+  mask-size: 200% 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.image{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include below(530px) {
+    object-position: calc(100% - ((35vw - 180px) * 1.2)) bottom;
+  }
+
+  @include above(530px) {
+    object-position: right bottom;
+  }
+}
+
+.headingWrapper {
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+
+  @include below(xsmall) {
+    top: gutter(4);
+  }
+
+  @include between(xsmall, 1160px) {
+    top: 9vw;
+  }
+
+  @include above(1160px) {
+    top: 22%;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  color: lighten($colour-secondary-light, 20%);
+  letter-spacing: 0.15em;
+  line-height: 1.5em !important;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  text-align: center;
+
+  @include below(xsmall) {
+    font-size: 2.5rem !important;
+  }
+
+  @include below(1160px) {
+    align-items: flex-start;
+  }
+
+  @include above(1160px) {
+    align-items: center;
+  }
+}

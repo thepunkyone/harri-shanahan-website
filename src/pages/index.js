@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
@@ -11,6 +11,7 @@ import useSiteMetadata from '../hooks/use-site-metadata'
 import postContactForm from '../api/postContactForm'
 
 import PageTemplate from '../components/templates/PageTemplate'
+import Hero from '../components/molecules/Hero'
 import Gallery from '../components/organisms/Gallery'
 import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
 import GalleryThumbnailGif from '../components/molecules/GalleryThumbnailGif'
@@ -114,6 +115,7 @@ const fakeThumbnails = [
 
 export default function Index() {
   const { siteUrl } = useSiteMetadata()
+  const contactSectionRef = useRef()
 
   return (
     <PageTemplate
@@ -122,18 +124,7 @@ export default function Index() {
       image="./images/hero/my-hero.jpg?nf_resize=fit&w=1200"
       absoluteUrl={siteUrl}
     >
-      <Container maxWidth={false} disableGutters className={styles.hero}>
-        <img
-          className={styles.heroImage}
-          alt="Cycling girl dressed as a fairy tale knight"
-          src="./images/hero/my-hero.jpg"
-        />
-        <Typography variant="h1" component="h1" className={styles.heroHeading}>
-          <span>Animation.</span>
-          <span>Video.</span>
-          <span>Art.</span>
-        </Typography>
-      </Container>
+      <Hero />
       <Container maxWidth={false} className={styles.welcomeSection}>
         <Container
           maxWidth="lg"
@@ -156,7 +147,14 @@ export default function Index() {
               need help creating a unique and imaginative concept I can help
               there, too. Get in touch for a chat and let’s make things happen.
             </Typography>
-            <Button size="large" variant="contained" color="primary">
+            <Button
+              size="large"
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                contactSectionRef.current.scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
               Get in touch
             </Button>
           </Box>
@@ -231,7 +229,11 @@ export default function Index() {
           <Services />
         </Container>
       </Container>
-      <Container maxWidth={false} className={styles.contactSection}>
+      <Container
+        maxWidth={false}
+        className={styles.contactSection}
+        ref={contactSectionRef}
+      >
         <Container maxWidth="lg" disableGutters>
           <Typography
             variant="h2"

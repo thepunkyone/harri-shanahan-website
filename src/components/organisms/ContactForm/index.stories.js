@@ -6,4 +6,6 @@ export default {
   title: 'Organisms/ContactFrom',
 }
 
-export const defaultContactForm = () => <ContactForm />
+export const defaultContactForm = () => (
+  <ContactForm postContactForm={() => {}} />
+)

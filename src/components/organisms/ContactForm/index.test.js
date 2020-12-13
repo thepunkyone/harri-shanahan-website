@@ -5,6 +5,14 @@ import '@testing-library/jest-dom/extend-expect'
 import ContactForm from './index'
 
 describe('Contact form', () => {
+  const setup = (postContactForm = () => {}) => {
+    const utils = render(<ContactForm postContactForm={postContactForm} />)
+
+    return {
+      ...utils,
+    }
+  }
+
   it('should render with name, email, phone number, message and honeypot fields', () => {})
 
   it('should not submit the form if name field has been left blank', () => {})
