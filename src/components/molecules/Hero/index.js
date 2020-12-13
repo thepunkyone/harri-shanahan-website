@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 
@@ -45,9 +46,15 @@ const Hero = () => {
       />
       <Container maxWidth="lg" className={styles.headingWrapper}>
         <Typography variant="h1" component="h1" className={styles.heading}>
-          <span>Animation.</span>
-          <span>Video.</span>
-          <span>Art.</span>
+          <span className={classNames(styles.fadeInSide, styles.animated)}>
+            Animation.
+          </span>
+          <span className={classNames(styles.fadeInSide, styles.animated)}>
+            Video.
+          </span>
+          <span className={classNames(styles.fadeInSide, styles.animated)}>
+            Art.
+          </span>
         </Typography>
       </Container>
     </Container>
