@@ -9,7 +9,9 @@ const Gallery = ({ className, thumbnails }) => {
     <section className={classNames(styles.gallery, className)}>
       {thumbnails.map((thumbnail, i) => (
         // eslint-disable-next-line react/no-array-index-key
-        <span key={i}>{thumbnail}</span>
+        <span key={i} className={styles.item}>
+          {thumbnail}
+        </span>
       ))}
     </section>
   )

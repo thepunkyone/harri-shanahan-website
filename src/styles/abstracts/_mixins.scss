@@ -18,3 +18,82 @@
   white-space: nowrap !important;
   width: 1px !important;
 }
+
+// Responsive sizes and padding
+
+// Min and Max Screen width defaults
+$MIN_SCREEN_WIDTH: 420px;
+$MAX_SCREEN_WIDTH: 1280px;
+
+
+//
+// Applies responsive sizing to an element
+//
+
+@mixin responsiveSize($property, $minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  // Calculate responsive size
+  $widthDifference: ($maxScreenWidth - $minScreenWidth) / 1px;
+  $sizeDifference: ($maxSize - $minSize) / 1px;
+
+  $result: calc(1 * (#{$minSize} + #{$sizeDifference} * ((100vw - #{$minScreenWidth}) / #{$widthDifference})));
+
+  // Set the CSS properties
+  #{$property}: $result;
+
+  @media screen and (max-width: #{$minScreenWidth}) {
+    #{$property}: #{$minSize};
+  }
+
+  @media screen and (min-width: #{$maxScreenWidth}) {
+    #{$property}: #{$maxSize};
+  }
+}
+
+//
+// Applies responsive margins to an element
+//
+
+@mixin margin($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(margin, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin margin-top($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(margin-top, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin margin-bottom($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(margin-bottom, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin margin-left($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(margin-left, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin margin-right($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(margin-right, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+
+//
+// Applies responsive padding to an element
+//
+
+@mixin padding($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(padding, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin padding-top($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(padding-top, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin padding-bottom($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(padding-bottom, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin padding-left($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(padding-left, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}
+
+@mixin padding-right($minSize, $maxSize, $minScreenWidth: $MIN_SCREEN_WIDTH, $maxScreenWidth: $MAX_SCREEN_WIDTH) {
+  @include responsiveSize(padding-right, $minSize, $maxSize, $minScreenWidth, $maxScreenWidth);
+}

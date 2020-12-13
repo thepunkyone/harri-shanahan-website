@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import Typography from '@material-ui/core/Typography'
 import {
   TheatersRounded,
@@ -9,9 +11,9 @@ import {
 
 import styles from './services.module.scss'
 
-const Services = () => {
+const Services = ({ className }) => {
   return (
-    <section className={styles.services}>
+    <section className={classNames(styles.services, className)}>
       <div className={styles.service}>
         <TheatersRounded className={styles.icon} />
         <Typography variant="h4" component="h4" className={styles.heading}>
@@ -81,6 +83,10 @@ const Services = () => {
       </div>
     </section>
   )
+}
+
+Services.propTypes = {
+  className: PropTypes.string,
 }
 
 export default Services

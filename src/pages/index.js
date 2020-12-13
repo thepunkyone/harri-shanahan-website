@@ -135,12 +135,7 @@ export default function Index() {
             <Typography variant="h2" component="h2" gutterBottom>
               Welcome
             </Typography>
-            <Typography
-              className={styles.welcomeDescription}
-              variant="body1"
-              component="p"
-              gutterBottom
-            >
+            <Typography variant="body1" component="p" gutterBottom>
               Thanks for visiting my site. I love a creative challenge and
               helping people achieve their vision. If you’ve got an idea for a
               great video or animation, I can help you make it a reality. If you
@@ -188,14 +183,13 @@ export default function Index() {
             className={styles.sectionHeading}
             variant="h3"
             component="h2"
-            align="center"
             color="secondary"
           >
             Animation Showreel
           </Typography>
           <VideoEmbed
             videoTitle="Animation Showreel"
-            videoUrl="https://player.vimeo.com/video/229623427?autoplay=0&title=0&portrait=0&byline=0&color=a051bc"
+            videoUrl="https://player.vimeo.com/video/229623427?autoplay=0&title=0&portrait=0&byline=0&color=7159b2"
           />
         </Container>
       </Container>
@@ -205,7 +199,6 @@ export default function Index() {
             className={styles.sectionHeading}
             variant="h3"
             component="h2"
-            align="center"
             color="secondary"
           >
             Portfolio
@@ -221,12 +214,11 @@ export default function Index() {
           <Typography
             variant="h2"
             component="h2"
-            align="center"
             className={styles.servicesHeading}
           >
             My Services
           </Typography>
-          <Services />
+          <Services className={styles.servicesGrid} />
         </Container>
       </Container>
       <Container
@@ -238,7 +230,6 @@ export default function Index() {
           <Typography
             variant="h2"
             component="h2"
-            align="center"
             className={styles.contactSectionHeading}
           >
             Get in touch
@@ -248,7 +239,6 @@ export default function Index() {
             variant="body2"
             component="p"
             color="textSecondary"
-            align="center"
           >
             Have an idea, a project, a job offer or a question?
           </Typography>
@@ -257,7 +247,6 @@ export default function Index() {
             variant="body2"
             component="p"
             color="textSecondary"
-            align="center"
           >
             I look forward to hearing from you.
           </Typography>

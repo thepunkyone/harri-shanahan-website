@@ -13,7 +13,7 @@
   mask-position: 15% 100%;
   mask-repeat: no-repeat;
   mask-size: 200% 100%;
-  z-index: 5;
+  z-index: 20;
   overflow: hidden;
 
   @include below(medium) {
@@ -31,7 +31,7 @@
   object-fit: cover;
 
   @include below(530px) {
-    object-position: calc(100% - ((35vw - 190px) * 1.2)) bottom;
+    object-position: calc(100% - ((30vw - 130px) * 1.3)) bottom;
   }
 
   @include above(530px) {
@@ -45,12 +45,13 @@
   z-index: 10;
   transform: translateX(-50%);
 
-  @include below(xsmall) {
+  @include below(small) {
     top: gutter(4);
   }
 
-  @include between(xsmall, 1160px) {
-    top: 9vw;
+  @include between(small, 1160px) {
+    top: 45%;
+    transform: translate(-50%, -50%);
   }
 
   @include above(1160px) {
@@ -67,7 +68,7 @@
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   text-align: center;
 
-  @include below(xsmall) {
+  @include below(small) {
     font-size: 2.5rem !important;
   }
 

@@ -5,7 +5,7 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 const customTheme = createMuiTheme({
   palette: {
     primary: {
-      main: '#a051bc',
+      main: '#7159b2',
       contrastText: '#f7f0ea',
     },
     secondary: {
@@ -32,7 +32,7 @@ const customTheme = createMuiTheme({
     fontWeightBold: 700,
     h1: {
       fontWeight: 700,
-      fontSize: '6rem',
+      fontSize: '7vw',
     },
     h2: {
       fontWeight: 600,
