@@ -24,9 +24,13 @@
     height: 250px;
     background-color: $colour-secondary-light;
     mask-image: url('../svgs/patterns/bottom-wave.svg');
-    mask-position: bottom;
+    mask-position: 95% 100%;
     mask-repeat: no-repeat;
-    mask-size: 100% 600px;
+    mask-size: 140% 600px;
+
+    @include below(medium) {
+      mask-size: 180% 300px;
+    }
   }
 }
 
@@ -145,6 +149,11 @@
     mask-position: bottom;
     mask-repeat: no-repeat;
     mask-size: 100% 600px;
+
+    @include below(medium) {
+      mask-position: 15% 100%;
+      mask-size: 180% 300px;
+    }
   }
 }
 
@@ -175,6 +184,11 @@
     mask-position: bottom;
     mask-repeat: no-repeat;
     mask-size: 100% 600px;
+
+    @include below(medium) {
+      mask-position: 0% 100%;
+      mask-size: 180% 300px;
+    }
   }
 }
 

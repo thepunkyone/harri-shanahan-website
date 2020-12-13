@@ -15,6 +15,7 @@
 
   input {
     background-color: lighten($colour-white, 5%);
+    border-radius: gutter(0.5);
   }
 }
 
@@ -23,6 +24,7 @@
 .textArea {
   margin-bottom: gutter(4) !important;
   background-color: lighten($colour-white, 5%);
+  border-radius: gutter(0.5);
 
   textarea {
     min-height: 200px;

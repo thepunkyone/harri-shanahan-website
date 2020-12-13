@@ -15,6 +15,11 @@
   mask-size: 200% 100%;
   z-index: 5;
   overflow: hidden;
+
+  @include below(medium) {
+    mask-position: 25% 100%;
+    mask-size: 260% 100%;
+  }
 }
 
 .image > img{
@@ -26,7 +31,7 @@
   object-fit: cover;
 
   @include below(530px) {
-    object-position: calc(100% - ((35vw - 180px) * 1.2)) bottom;
+    object-position: calc(100% - ((35vw - 190px) * 1.2)) bottom;
   }
 
   @include above(530px) {
