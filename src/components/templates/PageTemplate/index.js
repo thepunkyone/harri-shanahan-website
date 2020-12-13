@@ -5,7 +5,14 @@ import { Helmet } from 'react-helmet'
 import Header from '../../organisms/Header'
 import Footer from '../../organisms/Footer'
 
-const PageTemplate = ({ title, description, image, absoluteUrl, children }) => {
+const PageTemplate = ({
+  className,
+  title,
+  description,
+  image,
+  absoluteUrl,
+  children,
+}) => {
   return (
     <>
       <Helmet>
@@ -30,13 +37,14 @@ const PageTemplate = ({ title, description, image, absoluteUrl, children }) => {
         <meta property="twitter:image" content={image} />
       </Helmet>
       <Header />
-      <main>{children}</main>
+      <main className={className}>{children}</main>
       <Footer />
     </>
   )
 }
 
 PageTemplate.propTypes = {
+  className: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
