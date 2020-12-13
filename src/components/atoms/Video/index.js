@@ -7,7 +7,7 @@ const isSafari = () => {
 }
 
 export default function Video({ url, alt }) {
-  const videoParentRef = useRef()
+  const videoParentRef = useRef(null)
   const [shouldUseImage, setShouldUseImage] = useState(false)
 
   useEffect(() => {
@@ -20,11 +20,11 @@ export default function Video({ url, alt }) {
       if (player) {
         // set the video attributes using javascript as per the
         // webkit Policy
-        player.controls = false
-        player.playsinline = true
-        player.muted = true
-        player.setAttribute('muted', '') // leave no stones unturned :)
-        player.autoplay = true
+        // player.controls = false
+        // player.playsinline = true
+        // player.muted = true
+        // player.setAttribute('muted', '') // leave no stones unturned :)
+        // player.autoplay = true
 
         // Let's wait for an event loop tick and be async.
         setTimeout(() => {
@@ -43,7 +43,7 @@ export default function Video({ url, alt }) {
         }, 0)
       }
     }
-  }, [])
+  })
 
   return shouldUseImage ? (
     <img src={url} alt={alt} />
