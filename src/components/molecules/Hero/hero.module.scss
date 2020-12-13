@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.image{
+.image > img{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -64,6 +64,10 @@
 
   @include below(xsmall) {
     font-size: 2.5rem !important;
+  }
+
+  @include between(medium, 1160px) {
+    padding-left: gutter(5);
   }
 
   @include below(1160px) {
