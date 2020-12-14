@@ -57,7 +57,6 @@ export default function Video({ url, alt }) {
           muted
           autoplay
           playsinline
-          preload="metadata"
         >
         <source src="${url}" type="video/mp4" />
         </video>`,

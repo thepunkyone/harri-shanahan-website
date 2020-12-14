@@ -24,6 +24,7 @@
   background-color: rgba($colour-white, 0.6);
   border-radius: gutter(1);
   overflow: hidden;
+  z-index: 0;
 
   @include below(small) {
     padding: gutter(3) gutter(3) gutter(3.25);
