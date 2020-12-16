@@ -47,4 +47,8 @@ LazyImage.propTypes = {
   className: PropTypes.string,
 }
 
+LazyImage.defaultProps = {
+  dataSizes: 'auto',
+}
+
 export default LazyImage

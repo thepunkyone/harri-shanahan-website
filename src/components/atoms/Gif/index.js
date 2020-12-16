@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
+import LazyImage from '../LazyImage'
+
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase()
   return ua.indexOf('safari') > -1 && ua.indexOf('chrome') < 0
@@ -16,7 +18,7 @@ export default function Gif({ videoUrl, fallbackGifUrl, alt }) {
   })
 
   return shouldUseImage ? (
-    <img src={fallbackGifUrl} alt={alt} />
+    <LazyImage src={fallbackGifUrl} dataSrc={fallbackGifUrl} alt={alt} />
   ) : (
     <div
       dangerouslySetInnerHTML={{
