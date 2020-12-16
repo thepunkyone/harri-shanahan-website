@@ -125,7 +125,7 @@ export default function Index() {
   return (
     <PageTemplate
       className={styles.page}
-      title="Animation. Gif. Art. | Harri Shanahan"
+      title="Animation. Video. Art. | Harri Shanahan"
       description="I love a creative challenge and helping people achieve their vision. If you’ve got an idea for a great video or animation, I can help you make it a reality. If you need help creating a unique and imaginative concept I can help there, too."
       image="./images/hero/my-hero.jpg?nf_resize=fit&w=1200"
       absoluteUrl={siteUrl}
