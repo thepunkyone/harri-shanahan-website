@@ -25,6 +25,7 @@ const fakeThumbnails = [
   <GalleryThumbnailGif
     title="My Hero"
     video="./images/home-gallery/my-hero-2.mp4"
+    fallbackGif="./images/home-gallery/my-hero-2-fallback.gif"
     url="/"
   />,
   <GalleryThumbnail
@@ -41,6 +42,7 @@ const fakeThumbnails = [
   <GalleryThumbnailGif
     title="My Hero"
     video="./images/home-gallery/my-hero-1.mp4"
+    fallbackGif="./images/home-gallery/my-hero-1-fallback.gif"
     url="/"
   />,
   <GalleryThumbnail
@@ -63,11 +65,13 @@ const fakeThumbnails = [
   <GalleryThumbnailGif
     title="Iggy Pop Howling at the Moon"
     video="./images/home-gallery/iggy-pop.mp4"
+    fallbackGif="./images/home-gallery/iggy-pop-fallback.gif"
     url="/"
   />,
   <GalleryThumbnailGif
     title="Gig!"
     video="./images/home-gallery/gig.mp4"
+    fallbackGif="./images/home-gallery/gig-fallback.gif"
     url="/"
   />,
   <GalleryThumbnail
@@ -79,6 +83,7 @@ const fakeThumbnails = [
   <GalleryThumbnailGif
     title="Walking Woman"
     video="./images/home-gallery/walking-woman.mp4"
+    fallbackGif="./images/home-gallery/walking-woman-fallback.gif"
     url="/"
   />,
   <GalleryThumbnail
@@ -120,7 +125,7 @@ export default function Index() {
   return (
     <PageTemplate
       className={styles.page}
-      title="Animation. Video. Art. | Harri Shanahan"
+      title="Animation. Gif. Art. | Harri Shanahan"
       description="I love a creative challenge and helping people achieve their vision. If you’ve got an idea for a great video or animation, I can help you make it a reality. If you need help creating a unique and imaginative concept I can help there, too."
       image="./images/hero/my-hero.jpg?nf_resize=fit&w=1200"
       absoluteUrl={siteUrl}

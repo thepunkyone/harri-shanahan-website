@@ -5,20 +5,24 @@ import { PlayCircleFilledRounded } from '@material-ui/icons'
 import { CircularProgress } from '@material-ui/core'
 
 import Link from '../../atoms/Link'
-import Video from '../../atoms/Video'
-import OtherVideo from '../../atoms/Video/other'
+import Gif from '../../atoms/Gif'
 
 import styles from './galleryThumbnailGif.module.scss'
 
-const GalleryThumbnailGif = ({ title, url, video, linkToVideo }) => {
+const GalleryThumbnailGif = ({
+  title,
+  url,
+  video,
+  fallbackGif,
+  linkToVideo,
+}) => {
   return (
     <Link className={styles.thumbnail} href={url}>
       <article>
         <span className={styles.spinner}>
           <CircularProgress color="secondary" />
         </span>
-        {/*<OtherVideo url={video} />*/}
-        <Video url={video} alt={title} />
+        <Gif videoUrl={video} fallbackGifUrl={fallbackGif} alt={title} />
         <div className={styles.overlay}>
           <Typography component="h5" variant="h5" className={styles.title}>
             {title}
@@ -34,6 +38,7 @@ GalleryThumbnailGif.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   video: PropTypes.string.isRequired,
+  fallbackGif: PropTypes.string.isRequired,
   linkToVideo: PropTypes.bool,
 }
 

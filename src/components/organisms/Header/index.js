@@ -35,7 +35,7 @@ export default function Header() {
             Harri Shanahan
           </Typography>
           {/*<Button color="inherit">About</Button>*/}
-          {/*<Button color="inherit">Video</Button>*/}
+          {/*<Button color="inherit">Gif</Button>*/}
           {/*<IconButton*/}
           {/*  edge="end"*/}
           {/*  className={classes.menuButton}*/}
