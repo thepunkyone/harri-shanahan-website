@@ -7,7 +7,7 @@
 .hero {
   position: relative;
   width: 100%;
-  background-color: $colour-secondary-light;
+  background: linear-gradient(#ce9ee0, #6d6da3), #6d6da3;
   mask-image: url('../../../svgs/patterns/bottom-wave.svg');
   mask-position: 15% 100%;
   mask-repeat: no-repeat;
