@@ -11,6 +11,7 @@
   padding-top: 56.25%;
   border-radius: gutter(1);
   overflow: hidden;
+  z-index: 0;
 
   iframe {
     position: absolute;
