@@ -27,40 +27,47 @@ const fakeThumbnails = [
     video="./images/home-gallery/my-hero-2.mp4"
     fallbackGif="./images/home-gallery/my-hero-2-fallback.gif"
     url="/"
+    icon="gallery"
   />,
   <GalleryThumbnail
-    title="Nervous Twitch - Alright Lads?"
+    superTitle="Nervous Twitch"
+    title="Alright Lads?"
     image="./images/home-gallery/alright-lads.jpg"
     url="/"
+    icon="gallery"
   />,
   <GalleryThumbnail
-    title="ILL - Space Dick"
+    superTitle="ILL"
+    title="Space Dick"
     image="./images/home-gallery/space-dick-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnailGif
     title="My Hero"
     video="./images/home-gallery/my-hero-1.mp4"
     fallbackGif="./images/home-gallery/my-hero-1-fallback.gif"
     url="/"
+    icon="gallery"
   />,
   <GalleryThumbnail
     title="An Invitation to My Demon Sister"
     image="./images/home-gallery/demon-sister-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnail
     title="Rebel Dykes"
     image="./images/home-gallery/rebel-dykes-still.jpg"
     url="/"
+    icon="gallery"
   />,
   <GalleryThumbnail
-    title="ILL - ILL Song"
+    superTitle="ILL"
+    title="ILL Song"
     image="./images/home-gallery/ill-song-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnailGif
     title="Iggy Pop Howling at the Moon"
@@ -75,10 +82,11 @@ const fakeThumbnails = [
     url="/"
   />,
   <GalleryThumbnail
-    title="The Happy Soul - I Heard it Said"
+    superTitle="The Happy Soul"
+    title="I Heard it Said"
     image="./images/home-gallery/the-happy-soul-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnailGif
     title="Walking Woman"
@@ -87,34 +95,37 @@ const fakeThumbnails = [
     url="/"
   />,
   <GalleryThumbnail
-    title="Bobbie Peru - I am Contagious"
+    superTitle="Bobbie Peru"
+    title="I am Contagious"
     image="./images/home-gallery/bobbie-peru-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnail
     title="Italians Want the Monarchy Back"
     image="./images/home-gallery/italians-want-the-monarchy-back-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnail
-    title="Radio Partizan - Breaking News"
+    superTitle="Radio Partizan"
+    title="Breaking News"
     image="./images/home-gallery/radio-partizan-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnail
-    title="ILL - Kick Him out the Disco"
+    superTitle="ILL"
+    title="Kick Him out the Disco"
     image="./images/home-gallery/kick-him-out-the-disco-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
   <GalleryThumbnail
     title="One One Three"
     image="./images/home-gallery/one-one-three-still.jpg"
     url="/"
-    linkToVideo
+    icon="video"
   />,
 ]
 

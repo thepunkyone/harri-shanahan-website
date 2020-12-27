@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
-import { PlayCircleFilledRounded } from '@material-ui/icons'
+import { VideocamRounded, PhotoLibraryRounded } from '@material-ui/icons'
 import { CircularProgress } from '@material-ui/core'
 
 import sourceImageType from '../../../utils/sourceImageType'
@@ -11,7 +11,7 @@ import Link from '../../atoms/Link'
 
 import styles from './galleryThumbnail.module.scss'
 
-const GalleryThumbnail = ({ title, url, image, linkToVideo }) => {
+const GalleryThumbnail = ({ superTitle, title, url, image, icon }) => {
   const fallbackImageSource = `${image}?nf_resize=fit&h=433`
 
   const sources = [
@@ -42,21 +42,34 @@ const GalleryThumbnail = ({ title, url, image, linkToVideo }) => {
           lazyload
         />
         <div className={styles.overlay}>
+          {icon === 'video' && <VideocamRounded className={styles.videoIcon} />}
+          {icon === 'gallery' && (
+            <PhotoLibraryRounded className={styles.galleryIcon} />
+          )}
+          {superTitle && (
+            <Typography
+              component="p"
+              variant="h6"
+              className={styles.superTitle}
+            >
+              {superTitle}
+            </Typography>
+          )}
           <Typography component="h5" variant="h5" className={styles.title}>
             {title}
           </Typography>
         </div>
-        {linkToVideo && <PlayCircleFilledRounded className={styles.icon} />}
       </article>
     </Link>
   )
 }
 
 GalleryThumbnail.propTypes = {
+  superTitle: PropTypes.string,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  linkToVideo: PropTypes.bool,
+  icon: PropTypes.string,
 }
 
 export default GalleryThumbnail

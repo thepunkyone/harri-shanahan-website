@@ -11,14 +11,27 @@ export const defaultGalleryThumbnailGif = () => (
     title="Lego"
     url="/"
     video="http://techslides.com/demos/sample-videos/small.mp4"
+    fallbackGif="https://media.giphy.com/media/S9oNGC1E42VT2JRysv/giphy.gif"
   />
 )
 
 export const videoGalleryThumbnailGif = () => (
   <GalleryThumbnailGif
+    superTitle="Our Kid"
     title="Lego"
     url="/"
     video="http://techslides.com/demos/sample-videos/small.mp4"
-    linkToVideo
+    fallbackGif="https://media.giphy.com/media/S9oNGC1E42VT2JRysv/giphy.gif"
+    icon="video"
+  />
+)
+
+export const imageGalleryThumbnailGif = () => (
+  <GalleryThumbnailGif
+    title="Lego"
+    url="/"
+    video="http://techslides.com/demos/sample-videos/small.mp4"
+    fallbackGif="https://media.giphy.com/media/S9oNGC1E42VT2JRysv/giphy.gif"
+    icon="gallery"
   />
 )

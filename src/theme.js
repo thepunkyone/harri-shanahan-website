@@ -28,21 +28,24 @@ const customTheme = createMuiTheme({
     fontFamily: `"Merriweather", "Helvetica", "Arial", sans-serif`,
     fontWeightLight: 300,
     fontWeightRegular: 400,
-    fontWeightMedium: 600,
-    fontWeightBold: 700,
+    fontWeightMedium: 700,
+    fontWeightBold: 900,
     h1: {
-      fontWeight: 700,
+      fontWeight: 900,
       fontSize: '7vw',
     },
     h2: {
-      fontWeight: 600,
+      fontWeight: 700,
     },
     h4: {
-      fontWeight: 600,
+      fontWeight: 700,
       fontSize: '2.3rem',
     },
     h5: {
-      fontWeight: 500,
+      fontWeight: 700,
+    },
+    h6: {
+      fontWeight: 400,
     },
     body1: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,

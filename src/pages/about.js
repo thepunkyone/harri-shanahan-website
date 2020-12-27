@@ -7,7 +7,6 @@ import Paper from '@material-ui/core/Paper'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 import Link from '../components/atoms/Link'
-import ProTip from '../components/molecules/ProTip'
 import Copyright from '../components/atoms/Copyright'
 import Card from '../components/molecules/Card'
 
@@ -141,7 +140,6 @@ export default function About() {
           </Paper>
           {isLargeScreen && (
             <>
-              <ProTip />
               <Copyright />
             </>
           )}
