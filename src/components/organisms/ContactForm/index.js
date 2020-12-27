@@ -18,6 +18,10 @@ const ContactForm = ({ className, postContactForm }) => {
     setSubmittingForm(true)
 
     const { name, email, phoneNumber, message, _honeypot } = e.target.elements
+
+    if (!name.value || !email.value || !message.value || _honeypot.checked)
+      return
+
     const response = await postContactForm({
       name: name.value,
       email: email.value,
@@ -43,6 +47,7 @@ const ContactForm = ({ className, postContactForm }) => {
           styles.fadeInDown,
           styles.animated
         )}
+        aria-live="polite"
       >
         <Typography
           className={styles.successNotificationHeading}
@@ -75,6 +80,7 @@ const ContactForm = ({ className, postContactForm }) => {
         className={styles.field}
         required
         label="Name"
+        aria-label="Name"
         name="name"
         type="text"
         variant="outlined"
@@ -84,6 +90,7 @@ const ContactForm = ({ className, postContactForm }) => {
         className={styles.field}
         required
         label="Email address"
+        aria-label="Email address"
         name="email"
         type="email"
         variant="outlined"
@@ -92,6 +99,7 @@ const ContactForm = ({ className, postContactForm }) => {
       <TextField
         className={styles.field}
         label="Phone number"
+        aria-label="Phone number"
         name="phoneNumber"
         type="tel"
         variant="outlined"
@@ -101,6 +109,7 @@ const ContactForm = ({ className, postContactForm }) => {
         className={styles.textArea}
         required
         label="Message"
+        aria-label="Message"
         name="message"
         variant="outlined"
         multiline
@@ -125,6 +134,7 @@ const ContactForm = ({ className, postContactForm }) => {
             styles.fadeInDown,
             styles.animated
           )}
+          role="alert"
         >
           <Typography component="h4" variant="h4" gutterBottom>
             Oops!
