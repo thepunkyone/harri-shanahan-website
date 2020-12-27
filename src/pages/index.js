@@ -11,7 +11,7 @@ import useSiteMetadata from '../hooks/use-site-metadata'
 import postContactForm from '../api/postContactForm'
 
 import PageTemplate from '../components/templates/PageTemplate'
-import Hero from '../components/molecules/Hero'
+import Hero from '../components/molecules/HomePageHero'
 import Gallery from '../components/organisms/Gallery'
 import GalleryThumbnail from '../components/molecules/GalleryThumbnail'
 import GalleryThumbnailGif from '../components/molecules/GalleryThumbnailGif'
