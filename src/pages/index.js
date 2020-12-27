@@ -142,7 +142,11 @@ export default function Index() {
       absoluteUrl={siteUrl}
     >
       <Hero />
-      <Container maxWidth={false} className={styles.welcomeSection}>
+      <Container
+        maxWidth={false}
+        component="section"
+        className={styles.welcomeSection}
+      >
         <Container
           maxWidth="lg"
           disableGutters
@@ -194,7 +198,11 @@ export default function Index() {
           </Box>
         </Container>
       </Container>
-      <Container maxWidth={false} className={styles.showreelSection}>
+      <Container
+        maxWidth={false}
+        component="section"
+        className={styles.showreelSection}
+      >
         <Container maxWidth="lg" disableGutters>
           <Typography
             className={styles.sectionHeading}
@@ -210,7 +218,11 @@ export default function Index() {
           />
         </Container>
       </Container>
-      <Container maxWidth={false} className={styles.portfolioSection}>
+      <Container
+        maxWidth={false}
+        component="section"
+        className={styles.portfolioSection}
+      >
         <Container maxWidth="lg" disableGutters>
           <Typography
             className={styles.sectionHeading}
@@ -226,7 +238,11 @@ export default function Index() {
           />
         </Container>
       </Container>
-      <Container maxWidth={false} className={styles.servicesSection}>
+      <Container
+        maxWidth={false}
+        component="section"
+        className={styles.servicesSection}
+      >
         <Container maxWidth="lg" disableGutters>
           <Typography
             variant="h2"
@@ -240,6 +256,7 @@ export default function Index() {
       </Container>
       <Container
         maxWidth={false}
+        component="section"
         className={styles.contactSection}
         ref={contactSectionRef}
       >
