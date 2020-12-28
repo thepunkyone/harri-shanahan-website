@@ -1,0 +1,105 @@
+@import "../../../styles/abstracts/abstracts.scss";
+
+// ==========================================================================
+// Portfolio Page Template
+// ==========================================================================
+
+.page {
+  background-color: $colour-secondary-light;
+}
+
+// Backlink
+
+.backLinkBar {
+  background-color: $colour-grey-alpha;
+}
+
+.backLink {
+  @include transition;
+  @include padding-top(gutter(1), gutter(1.75));
+  @include padding-bottom(gutter(1), gutter(1.75));
+
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.arrowIcon {
+  font-size: 1.6em;
+  margin-left: -0.35em;
+
+  .backLink:hover & {
+    transform: translateX(-2px);
+  }
+}
+
+// Heading
+
+.headingWrapper {
+  @include padding-top(gutter(3), gutter(7));
+  @include padding-bottom(gutter(2.5), gutter(6));
+
+  position: relative;
+  background-color: $colour-white;
+  z-index: 5;
+  -webkit-transform: translate3d(0,0,0); // Safari z-index fix
+}
+
+.superTitle {
+  margin-bottom: gutter(1);
+  color: $colour-grey-delta;
+  font-style: italic;
+
+  @include below(small) {
+    margin-bottom: gutter(0.25);
+  }
+}
+
+.title {
+  color: $colour-secondary-dark;
+}
+
+// Media
+
+.mediaWrapper {
+  @include padding-bottom(gutter(4), 120px);
+
+  position: relative;
+  z-index: 0;
+  filter: drop-shadow(0 0 4px rgba($colour-grey-bravo, 0.6));
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: $colour-white;
+    mask-image: url('../../../svgs/patterns/bottom-wave.svg');
+    mask-position: 0 0;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
+}
+
+.mediaInner {
+  position: relative;
+  z-index: 5;
+
+}
+
+// Description
+
+.description{
+  @include padding-top(gutter(3), gutter(5));
+  @include padding-left(gutter(2.5), gutter(6));
+  @include padding-right(gutter(2.5), gutter(6));
+  @include padding-bottom(gutter(2.5), gutter(4.5));
+
+  margin-top: -#{gutter(1)};
+  background-color: #c8e1db;
+  border-bottom-left-radius: gutter(1);
+  border-bottom-right-radius: gutter(1);
+}

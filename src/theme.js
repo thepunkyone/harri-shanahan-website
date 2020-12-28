@@ -49,7 +49,7 @@ const customTheme = createMuiTheme({
     },
     body1: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
-      fontWeight: 500,
+      fontWeight: 400,
       fontSize: '1.6rem',
     },
     body2: {
@@ -60,6 +60,14 @@ const customTheme = createMuiTheme({
     button: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
       fontWeight: 600,
+    },
+  },
+  overrides: {
+    MuiCssBaseline: {
+      body: {
+        display: 'flex',
+        minHeight: '100%',
+      },
     },
   },
 })

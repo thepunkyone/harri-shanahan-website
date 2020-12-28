@@ -11,9 +11,6 @@ import Avatar from '@material-ui/core/Avatar'
 import styles from './header.module.scss'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   menuButton: {
     marginRight: theme.spacing(2),
   },

@@ -11,7 +11,7 @@
 // Field
 
 .field {
-  margin-bottom: gutter(3) !important;
+  margin-bottom: gutter(3);
 
   input {
     background-color: lighten($colour-white, 5%);
@@ -22,7 +22,7 @@
 // Textarea
 
 .textArea {
-  margin-bottom: gutter(4) !important;
+  margin-bottom: gutter(4);
   background-color: lighten($colour-white, 5%);
   border-radius: gutter(0.5);
 
@@ -44,9 +44,9 @@
 // Submit button
 
 .submitButton {
-  display: block !important;
-  width: 100% !important;
-  font-size: 1em !important;
+  display: block;
+  width: 100%;
+  font-size: 1em;
 }
 
 // Notifications

@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet'
 import Header from '../../organisms/Header'
 import Footer from '../../organisms/Footer'
 
+import './pageTemplate.scss'
+
 const PageTemplate = ({
   className,
   title,
@@ -21,6 +23,7 @@ const PageTemplate = ({
         <meta name="description" content={description} />
         <meta name="rating" content="general" />
         <meta name="robots" content="all" />
+        <link rel="canonical" href={absoluteUrl} />
 
         <meta property="og:site_name" content="Harri Shanahan" />
         <meta property="og:type" content="website" />

@@ -39,23 +39,23 @@
   position: absolute;
   top: -42px;
   right: -40px;
-  font-size: 200px !important;
-  display: block !important;
+  font-size: 200px;
+  display: block;
   margin: 0 auto gutter(2);
   color: darken($colour-secondary-light, 10%);
 
   @include below(xsmall) {
-    display: none !important;
+    display: none;
   }
 
   @include between(xsmall, small) {
-    font-size: 150px !important;
+    font-size: 150px;
     top: -34px;
     right: -34px;
   }
 
   @include between(large, 1080px) {
-    font-size: 150px !important;
+    font-size: 150px;
     top: -34px;
     right: -34px;
   }
@@ -65,8 +65,8 @@
 
 .heading {
   position: relative;
-  color: $colour-secondary-extra-dark !important;
-  margin-bottom: gutter(2) !important;
+  color: $colour-secondary-extra-dark;
+  margin-bottom: gutter(2);
 }
 
 // List

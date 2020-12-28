@@ -56,7 +56,7 @@
 
 .welcomeSectionInner {
   position: relative;
-  display: flex !important;
+  display: flex;
   z-index: 5;
 
   @include below(large) {
@@ -103,16 +103,16 @@
 
 .welcomeSectionCard {
   position: relative;
-  background-color: rgba($colour-white, 0.4) !important;
+  background-color: rgba($colour-white, 0.4);
   margin: 0 auto;
   padding: gutter(3);
-  box-shadow: none !important;
-  border-radius: gutter(1) !important;
+  box-shadow: none;
+  border-radius: gutter(1);
 }
 
 .avatarLarge{
-  width: 224px !important;
-  height: 224px !important;
+  width: 224px;
+  height: 224px;
   margin: 0 auto 24px;
   border: 6px solid $colour-secondary-light;
 }
@@ -120,18 +120,18 @@
 // Section heading
 
 .sectionHeading {
-  line-height: 1.4 !important;
+  line-height: 1.4;
 
   @include above(xsmall) {
     text-align: center;
   }
 
   @include below(medium) {
-    margin-bottom: gutter(3) !important;
+    margin-bottom: gutter(3);
   }
 
   @include above(medium) {
-    margin-bottom: gutter(6) !important;
+    margin-bottom: gutter(6);
   }
 
 }
@@ -227,11 +227,11 @@
   }
 
   @include below(medium) {
-    margin-bottom: gutter(5) !important;
+    margin-bottom: gutter(5);
   }
 
   @include above(medium) {
-    margin-bottom: gutter(8) !important;
+    margin-bottom: gutter(8);
   }
 }
 
@@ -250,7 +250,7 @@
 }
 
 .contactSectionHeading {
-  margin-bottom: gutter(3) !important;
+  margin-bottom: gutter(3);
 
   @include above(xsmall) {
     text-align: center;
@@ -262,7 +262,7 @@
   margin: 0 auto;
 
   &:last-of-type {
-    margin-bottom: gutter(5) !important;
+    margin-bottom: gutter(5);
   }
 
   @include above(xsmall) {

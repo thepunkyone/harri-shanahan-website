@@ -5,6 +5,7 @@
 // ==========================================================================
 
 .header {
+  box-shadow: none;
 }
 
 // Avatar
@@ -15,5 +16,5 @@
 // Title
 .title {
   flex-grow: 1;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }

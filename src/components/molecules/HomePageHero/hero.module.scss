@@ -71,10 +71,10 @@
   flex-direction: column;
   color: lighten($colour-secondary-light, 20%);
   letter-spacing: 0.15em;
-  line-height: 1.5em !important;
+  line-height: 1.5em;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   text-align: center;
-  font-size: calc((50px + 8vw) / 2) !important;
+  font-size: calc((50px + 8vw) / 2);
 
   @include between(medium, 1160px) {
     padding-left: gutter(5);

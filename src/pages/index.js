@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import PropTypes from 'prop-types'
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
@@ -66,7 +67,7 @@ const fakeThumbnails = [
     superTitle="ILL"
     title="ILL Song"
     image="./images/home-gallery/ill-song-still.jpg"
-    url="/"
+    url="/portfolio/ill-song"
     icon="video"
   />,
   <GalleryThumbnailGif
@@ -129,7 +130,7 @@ const fakeThumbnails = [
   />,
 ]
 
-export default function Index() {
+export default function Index({ location }) {
   const { siteUrl } = useSiteMetadata()
   const contactSectionRef = useRef()
 
@@ -139,7 +140,7 @@ export default function Index() {
       title="Animation. Video. Art. | Harri Shanahan"
       description="I love a creative challenge and helping people achieve their vision. If you’ve got an idea for a great video or animation, I can help you make it a reality. If you need help creating a unique and imaginative concept I can help there, too."
       image="./images/hero/my-hero.jpg?nf_resize=fit&w=1200"
-      absoluteUrl={siteUrl}
+      absoluteUrl={`${siteUrl}${location.pathname}`}
     >
       <Hero />
       <Container
@@ -292,4 +293,8 @@ export default function Index() {
       </Container>
     </PageTemplate>
   )
+}
+
+Index.propTypes = {
+  location: PropTypes.object.isRequired,
 }

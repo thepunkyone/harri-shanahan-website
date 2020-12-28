@@ -58,13 +58,13 @@
 .videoIcon {
   top: calc(6% - 5px);
   right: 6%;
-  font-size: 60px !important;
+  font-size: 60px;
 }
 
 .galleryIcon {
   top: calc(6% + 5px);
   right: calc(6% + 5px);
-  font-size: 50px !important;
+  font-size: 50px;
 }
 
 // Overlay
@@ -95,13 +95,13 @@
 }
 
 .superTitle {
-  color: $colour-grey-delta !important;
+  color: $colour-grey-delta;
   font-style: italic;
   text-shadow: 0 0 10px rgba($colour-white, 0.8);
 }
 
 .title {
-  color: $colour-primary !important;
+  color: $colour-primary;
   text-decoration: underline;
   text-shadow: 0 0 10px rgba($colour-white, 0.8);
 }
