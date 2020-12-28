@@ -21,7 +21,6 @@ export default function About() {
             Gatsby v4-beta example
           </Typography>
           <Link to="/">Go to the main page</Link>
-          <ProTip />
           <Copyright />
         </Box>
       </Container>
