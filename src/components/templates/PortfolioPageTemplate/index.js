@@ -18,7 +18,7 @@ const PortfolioPageTemplate = ({
   metaImage,
   metaTitle,
   metaDescription,
-  superTitle,
+  artist,
   title,
   media,
   description,
@@ -37,6 +37,12 @@ const PortfolioPageTemplate = ({
     }
   }
 
+  const titleWithArtist = (
+    <>
+      {artist} <span className={styles.divider}>•</span> {title}
+    </>
+  )
+
   return (
     <PageTemplate
       className={styles.page}
@@ -54,39 +60,18 @@ const PortfolioPageTemplate = ({
         </Container>
       </Container>
       <Container
-        className={styles.headingWrapper}
-        maxWidth={false}
-        disableGutters
-      >
-        <Container maxWidth="lg">
-          {superTitle && (
-            <Typography
-              className={styles.superTitle}
-              component="h3"
-              variant="h3"
-              align="center"
-            >
-              {superTitle}
-            </Typography>
-          )}
-          <Typography
-            className={styles.title}
-            component="h1"
-            variant="h2"
-            align="center"
-          >
-            {title}
-          </Typography>
-        </Container>
-      </Container>
-      <Container
         className={styles.mediaWrapper}
         maxWidth={false}
         disableGutters
       >
         <Container className={styles.mediaInner} maxWidth="lg">
           {media}
-          <div className={styles.description}>{description}</div>
+          <div className={styles.description}>
+            <Typography className={styles.title} component="h1" variant="h3">
+              {artist ? titleWithArtist : title}
+            </Typography>
+            {description}
+          </div>
         </Container>
       </Container>
     </PageTemplate>
@@ -98,7 +83,7 @@ PortfolioPageTemplate.propTypes = {
   metaImage: PropTypes.string.isRequired,
   metaTitle: PropTypes.string.isRequired,
   metaDescription: PropTypes.string.isRequired,
-  superTitle: PropTypes.string,
+  artist: PropTypes.string,
   title: PropTypes.string.isRequired,
   media: PropTypes.node.isRequired,
   description: PropTypes.oneOfType([PropTypes.string, PropTypes.node])

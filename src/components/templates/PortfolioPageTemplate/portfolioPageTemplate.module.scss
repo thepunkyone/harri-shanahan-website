@@ -11,7 +11,13 @@
 // Backlink
 
 .backLinkBar {
-  background-color: $colour-grey-alpha;
+  position: relative;
+
+  @include padding-top(gutter(0.5), gutter(1));
+  @include padding-bottom(gutter(1), gutter(1.75));
+
+  background-color: $colour-white;
+  z-index: 5;
 }
 
 .backLink {
@@ -21,6 +27,7 @@
 
   display: inline-flex;
   align-items: center;
+  font-size: 0.8em;
   font-weight: 600;
 }
 
@@ -43,20 +50,6 @@
   background-color: $colour-white;
   z-index: 5;
   -webkit-transform: translate3d(0,0,0); // Safari z-index fix
-}
-
-.superTitle {
-  margin-bottom: gutter(1);
-  color: $colour-grey-delta;
-  font-style: italic;
-
-  @include below(small) {
-    margin-bottom: gutter(0.25);
-  }
-}
-
-.title {
-  color: $colour-secondary-dark;
 }
 
 // Media
@@ -102,4 +95,16 @@
   background-color: #c8e1db;
   border-bottom-left-radius: gutter(1);
   border-bottom-right-radius: gutter(1);
+}
+
+.title {
+  @include margin-bottom(gutter(1), gutter(1.5));
+
+  display: inline-block;
+  color: $colour-secondary-dark;
+  font-weight: 600;
+}
+
+.divider {
+  color: $colour-grey-delta;
 }

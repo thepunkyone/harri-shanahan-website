@@ -16,7 +16,7 @@ const IllSongPage = ({ location }) => {
       metaDescription="ILL/Box Records/Harri Shanahan (producer, videographer, editor)."
       metaImage="./images/portfolio-pages/ill-song/ill-song-still.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
-      superTitle="ILL"
+      artist="ILL"
       title="ILL Song"
       media={
         <VideoEmbed
@@ -26,7 +26,7 @@ const IllSongPage = ({ location }) => {
         />
       }
       description={
-        <Typography component="p" variant="body2" color='textPrimary'>
+        <Typography component="p" variant="body2" color="textPrimary">
           ILL/Box Records/Harri Shanahan (producer, videographer, editor).
         </Typography>
       }
