@@ -49,6 +49,10 @@
   background-color: $colour-grey-bravo;
   overflow: hidden;
 
+  &:focus {
+    outline: none;
+  }
+
   &:last-of-type {
     margin-right: 0;
   }
@@ -87,11 +91,12 @@
   position: absolute;
   content: '';
   height: 60px;
-  width: 60px;
+  width: 20%;
   top: 0;
   right: 0;
   background: linear-gradient(to right, transparent, $colour-white);
   z-index: 10;
+  pointer-events: none;
 }
 
 // Buttons

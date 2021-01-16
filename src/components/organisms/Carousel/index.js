@@ -15,6 +15,8 @@ import {
   ArrowForwardIosRounded as ArrowForward,
 } from '@material-ui/icons'
 
+import canUseDOM from '../../../utils/canUseDom'
+
 import LazyImage from '../../atoms/LazyImage'
 
 import 'pure-react-carousel/dist/react-carousel.es.css'
@@ -26,7 +28,23 @@ const Carousel = ({
   naturalSlideWidth,
   naturalSlideHeight,
 }) => {
-  const [selectedSlide, setSelectedSlide] = useState(0)
+  const [translateXValue, setTranslateXValue] = useState(0)
+
+  const scrollSelectedThumbnailIntoView = (slideIndex) => {
+    if (canUseDOM) {
+      const thumbnailContainerElement = window.document.getElementById(
+        'thumbnail-container'
+      )
+      const thumbnailContainerWidth = thumbnailContainerElement.offsetWidth
+      const thumbnails = window.document.getElementById('thumbnails')
+      const thumbnailsWidth = thumbnails.offsetWidth
+
+      if (thumbnailsWidth > thumbnailContainerWidth) {
+        setTranslateXValue(slideIndex * 56)
+      }
+    }
+  }
+
   return (
     <CarouselProvider
       className={className}
@@ -55,12 +73,12 @@ const Carousel = ({
           <ArrowForward className={styles.arrow} />
         </ButtonNext>
       </div>
-      <div className={styles.thumbnailWrapper}>
+      <div id="thumbnail-container" className={styles.thumbnailWrapper}>
         <DotGroup
+          id="thumbnails"
           className={styles.thumbnails}
-          style={{ transform: `translateX(-${selectedSlide * 56}px)` }}
+          style={{ transform: `translateX(-${translateXValue}px)` }}
           renderDots={({ currentSlide }) => {
-            setSelectedSlide(currentSlide)
             const dots = slides.map((slide, i) => {
               return (
                 <Dot
@@ -69,6 +87,7 @@ const Carousel = ({
                   })}
                   key={slide.thumbnailImage}
                   slide={i}
+                  onClick={() => scrollSelectedThumbnailIntoView(i)}
                 >
                   <LazyImage
                     className={styles.thumbnailImage}
