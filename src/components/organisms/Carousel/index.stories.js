@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Carousel from './index'
+import CarouselState from './carouselState'
 import LazyImage from '../../atoms/LazyImage'
 
 const componentStyles = {
@@ -53,5 +53,9 @@ export default {
 }
 
 export const defaultCarousel = () => (
-  <Carousel slides={slides} naturalSlideWidth={100} naturalSlideHeight={56} />
+  <CarouselState
+    slides={slides}
+    naturalSlideWidth={100}
+    naturalSlideHeight={56}
+  />
 )

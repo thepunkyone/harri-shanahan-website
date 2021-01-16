@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import {
-  CarouselProvider,
+  CarouselContext,
   Slider,
   Slide,
   ButtonBack,
@@ -22,15 +22,12 @@ import LazyImage from '../../atoms/LazyImage'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import styles from './carousel.module.scss'
 
-const Carousel = ({
-  className,
-  slides,
-  naturalSlideWidth,
-  naturalSlideHeight,
-}) => {
+const Carousel = ({ slides }) => {
+  const carouselContext = useContext(CarouselContext)
+
   const [translateXValue, setTranslateXValue] = useState(0)
 
-  const scrollSelectedThumbnailIntoView = (slideIndex) => {
+  const scrollSelectedThumbnailIntoView = () => {
     if (canUseDOM) {
       const thumbnailContainerElement = window.document.getElementById(
         'thumbnail-container'
@@ -40,19 +37,23 @@ const Carousel = ({
       const thumbnailsWidth = thumbnails.offsetWidth
 
       if (thumbnailsWidth > thumbnailContainerWidth) {
-        setTranslateXValue(slideIndex * 56)
+        setTranslateXValue(carouselContext.state.currentSlide * 56)
       }
     }
   }
 
+  const onSlideChange = () => {
+    scrollSelectedThumbnailIntoView()
+  }
+
+  useEffect(() => {
+    onSlideChange()
+    carouselContext.subscribe(onSlideChange)
+    return () => carouselContext.unsubscribe(onSlideChange)
+  }, [carouselContext])
+
   return (
-    <CarouselProvider
-      className={className}
-      naturalSlideWidth={naturalSlideWidth}
-      naturalSlideHeight={naturalSlideHeight}
-      totalSlides={slides.length}
-      infinite
-    >
+    <>
       <div className={styles.sliderWrapper}>
         <Slider
           className={styles.slider}
@@ -87,7 +88,6 @@ const Carousel = ({
                   })}
                   key={slide.thumbnailImage}
                   slide={i}
-                  onClick={() => scrollSelectedThumbnailIntoView(i)}
                 >
                   <LazyImage
                     className={styles.thumbnailImage}
@@ -104,15 +104,12 @@ const Carousel = ({
         />
         <span className={styles.gradient} />
       </div>
-    </CarouselProvider>
+    </>
   )
 }
 
 Carousel.propTypes = {
-  className: PropTypes.string,
   slides: PropTypes.array.isRequired,
-  naturalSlideWidth: PropTypes.number.isRequired,
-  naturalSlideHeight: PropTypes.number.isRequired,
 }
 
 export default Carousel
