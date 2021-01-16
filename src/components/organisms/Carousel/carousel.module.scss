@@ -4,6 +4,135 @@
 // Carousel
 // ==========================================================================
 
+
+// Animation
+
 .sliderAnimation {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Slider
+
+.sliderWrapper {
+  position: relative;
+}
+
+.slider {
+  border-radius: gutter(0.5);
+  background-color: $colour-grey-bravo;
+}
+
+// Thumbnails
+
+.thumbnailWrapper {
+  position: relative;
+  height: 60px;
+  margin-top: gutter(1.5);
+  overflow-x: hidden;
+}
+
+.thumbnails {
+  @include transition;
+
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100px;
+  margin-right: gutter(1.5);
+  padding: 60px 0 0;
+  border: 0;
+  border-radius: gutter(0.5);
+  background-color: $colour-grey-bravo;
+  overflow: hidden;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &::after {
+    @include transition;
+
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($colour-white, 0.5);
+    z-index: 5;
+  }
+}
+
+.thumbnailSelected::after {
+  background-color: transparent;
+}
+
+.thumbnailImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.gradient {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 60px;
+  width: 60px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, transparent, $colour-white);
+  z-index: 10;
+}
+
+// Buttons
+
+.buttonBack, .buttonNext {
+  @include transition;
+  @include padding-left(gutter(1), gutter(2));
+  @include padding-right(gutter(1), gutter(2));
+
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: $colour-white;
+
+  &:hover {
+    background-color: rgba($colour-white, 0.5);
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  @include below(small) {
+    display: none;
+  }
+}
+
+.buttonBack {
+  left: 0;
+}
+
+.buttonNext {
+  right: 0;
+}
+
+.arrow {
+  width: 1.5em !important;
+  height: 1.5em !important;
 }
