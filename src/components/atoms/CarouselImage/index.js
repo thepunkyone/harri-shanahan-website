@@ -7,18 +7,18 @@ import Picture from '../Picture'
 import styles from './carouselImage.module.scss'
 
 const CarouselImage = ({ image, alt }) => {
-  const fallbackImageSource = `${image}?nf_resize=fit&h=800`
+  const fallbackImageSource = `${image}?nf_resize=fit&h=1232`
   const sources = [
     {
       id: 'desktop',
-      srcSet: `${image}?nf_resize=fit&h=800 1x, ${image}?nf_resize=fit&h=1600 2x`,
-      media: '(min-width: 481px)',
+      srcSet: `${image}?nf_resize=fit&h=1232`,
+      media: '(min-width: 769px)',
       type: sourceImageType(image),
     },
     {
       id: 'mobile',
-      srcSet: `${image}?nf_resize=fit&h=600 1x, ${image}?nf_resize=fit&h=1200 2x`,
-      media: '(max-width: 480px)',
+      srcSet: `${image}?nf_resize=fit&h=718`,
+      media: '(max-width: 768px)',
       type: sourceImageType(image),
     },
   ]
