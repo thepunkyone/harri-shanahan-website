@@ -100,11 +100,11 @@
   display: block;
   position: absolute;
   content: '';
-  height: 60px;
+  height: 92px;
   width: 20%;
   top: 0;
   right: 0;
-  background: linear-gradient(to right, transparent, $colour-white);
+  background: linear-gradient(to right, rgba($colour-white, 0), $colour-white);
   z-index: 10;
   pointer-events: none;
 }

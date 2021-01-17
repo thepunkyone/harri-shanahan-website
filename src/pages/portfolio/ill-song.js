@@ -14,7 +14,7 @@ const IllSongPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="ILL - ILL Song | Portfolio | Harri Shanahan"
       metaDescription="ILL/Box Records/Harri Shanahan (producer, videographer, editor)."
-      metaImage="../images/portfolio-pages/ill-song/ill-song-still.jpg"
+      metaImage="../../images/portfolio-pages/ill-song/ill-song-still.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="ILL Song"
