@@ -16,6 +16,7 @@
 .sliderWrapper {
   border-radius: gutter(0.5);
   position: relative;
+  background-color: $colour-grey-bravo;
   z-index: 15;
   overflow: hidden;
 }
@@ -23,7 +24,6 @@
 .slide {
   :global(.carousel__inner-slide) {
     overflow: hidden;
-    background-color: $colour-grey-bravo;
   }
 }
 
