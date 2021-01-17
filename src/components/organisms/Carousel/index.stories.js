@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CarouselState from './carouselState'
+import CarouselState from './index'
 import LazyImage from '../../atoms/LazyImage'
 
 const componentStyles = {

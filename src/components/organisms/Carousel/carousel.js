@@ -61,7 +61,11 @@ const Carousel = ({ slides }) => {
         >
           {slides.map((slide, i) => {
             return (
-              <Slide index={i} key={slide.thumbnailImage}>
+              <Slide
+                className={styles.slide}
+                index={i}
+                key={slide.thumbnailImage}
+              >
                 {slide.component}
               </Slide>
             )
@@ -80,7 +84,9 @@ const Carousel = ({ slides }) => {
           className={styles.thumbnails}
           style={{ transform: `translateX(-${translateXValue}px)` }}
           renderDots={({ currentSlide }) => {
-            const dots = slides.map((slide, i) => {
+            return slides.map((slide, i) => {
+              const thumbnailImageUrl = `${slide.thumbnailImage}?nf_resize=fit&w=100`
+
               return (
                 <Dot
                   className={classNames(styles.thumbnail, {
@@ -91,15 +97,13 @@ const Carousel = ({ slides }) => {
                 >
                   <LazyImage
                     className={styles.thumbnailImage}
-                    dataSrc={slide.thumbnailImage}
-                    src={slide.thumbnailImage}
+                    dataSrc={thumbnailImageUrl}
+                    src={thumbnailImageUrl}
                     alt={`Slide ${i}`}
                   />
                 </Dot>
               )
             })
-
-            return dots
           }}
         />
         <span className={styles.gradient} />

@@ -27,7 +27,7 @@ const fakeThumbnails = [
     title="My Hero"
     video="./images/home-gallery/my-hero-2.mp4"
     fallbackGif="./images/home-gallery/my-hero-2-fallback.gif"
-    url="/"
+    url="/portfolio/my-hero"
     icon="gallery"
   />,
   <GalleryThumbnail
@@ -48,7 +48,7 @@ const fakeThumbnails = [
     title="My Hero"
     video="./images/home-gallery/my-hero-1.mp4"
     fallbackGif="./images/home-gallery/my-hero-1-fallback.gif"
-    url="/"
+    url="/portfolio/my-hero"
     icon="gallery"
   />,
   <GalleryThumbnail

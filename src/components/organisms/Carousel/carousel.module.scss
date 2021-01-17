@@ -1,7 +1,7 @@
 @import "../../../styles/abstracts/abstracts.scss";
 
 // ==========================================================================
-// CarouselState
+// Carousel
 // ==========================================================================
 
 
@@ -14,20 +14,30 @@
 // Slider
 
 .sliderWrapper {
+  border-radius: gutter(0.5);
   position: relative;
+  z-index: 15;
+  overflow: hidden;
 }
 
-.slider {
-  border-radius: gutter(0.5);
-  background-color: $colour-grey-bravo;
+.slide {
+  :global(.carousel__inner-slide) {
+    overflow: hidden;
+    background-color: $colour-grey-bravo;
+  }
 }
 
 // Thumbnails
+// ==========================================================================
 
 .thumbnailWrapper {
   position: relative;
-  height: 60px;
-  margin-top: gutter(1.5);
+  height: 92px;
+  margin-top: -#{gutter(1)};
+  padding: gutter(2.5) gutter(1.5) gutter(1.5);
+  background-color: $colour-white;
+  border-bottom-left-radius: gutter(0.5);
+  border-bottom-right-radius: gutter(0.5);
   overflow-x: hidden;
 }
 
@@ -100,6 +110,7 @@
 }
 
 // Buttons
+// ==========================================================================
 
 .buttonBack, .buttonNext {
   @include transition;
@@ -112,11 +123,12 @@
   top: 0;
   border: none;
   border-radius: 0;
-  background-color: transparent;
+  background-color: rgba($colour-grey-bravo, 0.5);
   color: $colour-white;
+  opacity: 0;
 
   &:hover {
-    background-color: rgba($colour-white, 0.5);
+    opacity: 1;
   }
 
   &:focus {
