@@ -75,12 +75,14 @@ const fakeThumbnails = [
     video="./images/home-gallery/iggy-pop.mp4"
     fallbackGif="./images/home-gallery/iggy-pop-fallback.gif"
     url="/"
+    icon="gif"
   />,
   <GalleryThumbnailGif
     title="Gig!"
     video="./images/home-gallery/gig.mp4"
     fallbackGif="./images/home-gallery/gig-fallback.gif"
     url="/"
+    icon="gif"
   />,
   <GalleryThumbnail
     superTitle="The Happy Soul"
@@ -94,6 +96,7 @@ const fakeThumbnails = [
     video="./images/home-gallery/walking-woman.mp4"
     fallbackGif="./images/home-gallery/walking-woman-fallback.gif"
     url="/"
+    icon="gif"
   />,
   <GalleryThumbnail
     superTitle="Bobbie Peru"

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
-import { VideocamRounded, PhotoLibraryRounded } from '@material-ui/icons'
+import {VideocamRounded, PhotoLibraryRounded, GifRounded} from '@material-ui/icons'
 import { CircularProgress } from '@material-ui/core'
 
 import Link from '../../atoms/Link'
@@ -29,6 +29,7 @@ const GalleryThumbnailGif = ({
           {icon === 'gallery' && (
             <PhotoLibraryRounded className={styles.galleryIcon} />
           )}
+          {icon === 'gif' && <GifRounded className={styles.gifIcon} />}
           {superTitle && (
             <Typography
               component="p"

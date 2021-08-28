@@ -35,3 +35,13 @@ export const imageGalleryThumbnailGif = () => (
     icon="gallery"
   />
 )
+
+export const gifThumbnailGif = () => (
+  <GalleryThumbnailGif
+    title="Lego"
+    url="/"
+    video="http://techslides.com/demos/sample-videos/small.mp4"
+    fallbackGif="https://media.giphy.com/media/S9oNGC1E42VT2JRysv/giphy.gif"
+    icon="gif"
+  />
+)

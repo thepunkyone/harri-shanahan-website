@@ -48,7 +48,7 @@
 
 // Icons
 
-.videoIcon, .galleryIcon {
+.videoIcon, .galleryIcon, .gifIcon {
   @include transition;
 
   position: absolute;
@@ -65,6 +65,12 @@
   top: calc(6% + 5px);
   right: calc(6% + 5px);
   font-size: 50px;
+}
+
+.gifIcon {
+  top: calc(6% - 5px);
+  right: 6%;
+  font-size: 60px;
 }
 
 // Overlay

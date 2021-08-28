@@ -43,7 +43,7 @@ const slides = [
         alt="My Hero - A close-up of the Girl's eyes with her hero Princess Z reflected in them"
       />
     ),
-    thumbnailImage: '../images/portfolio-pages/my-hero/my-hero-4.png',
+    thumbnailImage: '../../images/portfolio-pages/my-hero/my-hero-4.png',
   },
   {
     component: (

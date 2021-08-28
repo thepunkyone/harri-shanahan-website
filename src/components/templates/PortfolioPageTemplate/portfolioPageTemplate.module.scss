@@ -73,7 +73,7 @@
 // Description
 
 .description{
-  @include padding-top(gutter(4), gutter(6));
+  @include padding-top(gutter(5), gutter(7));
   @include padding-left(gutter(2.5), gutter(6));
   @include padding-right(gutter(2.5), gutter(6));
   @include padding-bottom(gutter(3.75), gutter(6.5));
@@ -85,7 +85,7 @@
 }
 
 .title {
-  @include margin-bottom(gutter(1), gutter(1.5));
+  @include margin-bottom(gutter(2), gutter(3.5));
 
   display: inline-block;
   color: $colour-secondary-dark;
