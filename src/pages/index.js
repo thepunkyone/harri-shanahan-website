@@ -74,7 +74,7 @@ const fakeThumbnails = [
     title="Iggy Pop Howling at the Moon"
     video="./images/home-gallery/iggy-pop.mp4"
     fallbackGif="./images/home-gallery/iggy-pop-fallback.gif"
-    url="/"
+    url="/portfolio/iggy-pop-howling-at-the-moon"
     icon="gif"
   />,
   <GalleryThumbnailGif
