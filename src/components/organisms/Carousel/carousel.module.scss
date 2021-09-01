@@ -123,21 +123,19 @@
   top: 0;
   border: none;
   border-radius: 0;
-  background-color: rgba($colour-grey-bravo, 0.5);
+  background-color: transparent;
   color: $colour-white;
-  opacity: 0;
+  opacity: 1;
 
   &:hover {
     opacity: 1;
+    background-color: rgba($colour-grey-bravo, 0.5);
   }
 
   &:focus {
+    background-color: rgba($colour-grey-bravo, 0.5);
     border: none;
     outline: none;
-  }
-
-  @include below(small) {
-    display: none;
   }
 }
 
@@ -150,6 +148,11 @@
 }
 
 .arrow {
-  width: 1.5em !important;
-  height: 1.5em !important;
+  width: 1.6em !important;
+  height: 1.6em !important;
+  opacity: 1;
+
+  path {
+    fill: $colour-grey-alpha;
+  }
 }
