@@ -106,15 +106,23 @@
   background-color: rgba($colour-white, 0.4);
   margin: 0 auto;
   padding: gutter(3);
-  box-shadow: none;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
   border-radius: gutter(1);
 }
 
 .avatarLarge{
+  width: 212px;
+  height: 212px;
+  filter: grayscale(100%);
+}
+
+.avatarWrapper {
   width: 224px;
   height: 224px;
   margin: 0 auto 24px;
-  border: 6px solid $colour-secondary-light;
+  padding: 6px;
+  background-color: $colour-secondary-light;
+  border-radius: 200px;
 }
 
 // Section heading

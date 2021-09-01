@@ -26,7 +26,7 @@ export default function Header() {
           <Avatar
             className={styles.avatar}
             alt="Harri Shanahan"
-            src="https://harrishanahan.files.wordpress.com/2020/11/nice-profile-pic.jpg?w=139"
+            src="./images/home/nice-profile-pic.jpg?w=40"
           />
           <Typography variant="h6" className={styles.title}>
             Harri Shanahan

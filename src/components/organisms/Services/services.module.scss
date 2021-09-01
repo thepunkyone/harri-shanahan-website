@@ -19,15 +19,24 @@
 }
 
 .service {
+  @include transition;
+
   position: relative;
   padding: gutter(4) gutter(4) gutter(5);
   background-color: rgba($colour-white, 0.6);
   border-radius: gutter(1);
   overflow: hidden;
   z-index: 0;
+  transform: scale(1);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
 
   @include below(small) {
     padding: gutter(3) gutter(3) gutter(3.25);
+  }
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 5%);
   }
 }
 

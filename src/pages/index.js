@@ -22,7 +22,7 @@ import ContactForm from '../components/organisms/ContactForm'
 
 import styles from './index.module.scss'
 
-const fakeThumbnails = [
+const portfolioLinks = [
   <GalleryThumbnailGif
     title="My Hero"
     video="./images/home-gallery/my-hero-2.mp4"
@@ -181,11 +181,13 @@ export default function Index({ location }) {
           <Box my={4} className={styles.welcomeSectionColumn}>
             <CardComponent className={styles.welcomeSectionCard}>
               <CardContent className={styles.welcomeSectionCardContent}>
-                <Avatar
-                  className={styles.avatarLarge}
-                  alt="Harri Shanahan"
-                  src="https://harrishanahan.files.wordpress.com/2020/11/nice-profile-pic.jpg?w=139"
-                />
+                <div className={styles.avatarWrapper}>
+                  <Avatar
+                    className={styles.avatarLarge}
+                    alt="Harri Shanahan"
+                    src="./images/home/nice-profile-pic.jpg"
+                  />
+                </div>
                 <Typography
                   variant="h4"
                   component="p"
@@ -238,7 +240,7 @@ export default function Index({ location }) {
           </Typography>
           <Gallery
             className={styles.portfolioGallery}
-            thumbnails={fakeThumbnails}
+            thumbnails={portfolioLinks}
           />
         </Container>
       </Container>
