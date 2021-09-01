@@ -81,7 +81,7 @@ const fakeThumbnails = [
     title="Gig!"
     video="./images/home-gallery/gig.mp4"
     fallbackGif="./images/home-gallery/gig-fallback.gif"
-    url="/"
+    url="/portfolio/gig"
     icon="gif"
   />,
   <GalleryThumbnail
@@ -95,7 +95,7 @@ const fakeThumbnails = [
     title="Walking Woman"
     video="./images/home-gallery/walking-woman.mp4"
     fallbackGif="./images/home-gallery/walking-woman-fallback.gif"
-    url="/"
+    url="/portfolio/walking-woman"
     icon="gif"
   />,
   <GalleryThumbnail

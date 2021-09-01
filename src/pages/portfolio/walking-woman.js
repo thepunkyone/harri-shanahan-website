@@ -7,21 +7,21 @@ import useSiteMetadata from '../../hooks/use-site-metadata'
 import PortfolioPageTemplate from '../../components/templates/PortfolioPageTemplate'
 import GifEmbed from '../../components/atoms/GifEmbed'
 
-const IggyPopPage = ({ location }) => {
+const WalkingWomanPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
 
   return (
     <PortfolioPageTemplate
-      metaTitle="Iggy Pop Howling at the Moon | Portfolio | Harri Shanahan"
+      metaTitle="Walking Woman | Portfolio | Harri Shanahan"
       metaDescription="Harri Shanahan (animation)."
-      metaImage="../../images/portfolio-pages/iggy-pop/iggy-pop-meta-image.png"
+      metaImage="../../images/portfolio-pages/walking-woman/walking-woman-meta-image.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
-      title="Iggy Pop Howling at the Moon"
+      title="Walking Woman"
       media={
         <GifEmbed
-          videoUrl="../../images/portfolio-pages/iggy-pop/iggy-pop.mp4"
-          fallbackGifUrl="../../images/portfolio-pages/iggy-pop/iggy-pop-fallback.gif"
-          alt="Iggy Pop Howling at the Moon"
+          videoUrl="../../images/portfolio-pages/walking-woman/walking-woman.mp4"
+          fallbackGifUrl="../../images/portfolio-pages/walking-woman/walking-woman-fallback.gif"
+          alt="A nude woman wearing only a pair of Dr Marten's is walking across the frame"
         />
       }
       description={
@@ -33,8 +33,8 @@ const IggyPopPage = ({ location }) => {
   )
 }
 
-IggyPopPage.propTypes = {
+WalkingWomanPage.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default IggyPopPage
+export default WalkingWomanPage

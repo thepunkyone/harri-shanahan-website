@@ -7,21 +7,21 @@ import useSiteMetadata from '../../hooks/use-site-metadata'
 import PortfolioPageTemplate from '../../components/templates/PortfolioPageTemplate'
 import GifEmbed from '../../components/atoms/GifEmbed'
 
-const IggyPopPage = ({ location }) => {
+const GigPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
 
   return (
     <PortfolioPageTemplate
-      metaTitle="Iggy Pop Howling at the Moon | Portfolio | Harri Shanahan"
+      metaTitle="Gig! | Portfolio | Harri Shanahan"
       metaDescription="Harri Shanahan (animation)."
-      metaImage="../../images/portfolio-pages/iggy-pop/iggy-pop-meta-image.png"
+      metaImage="../../images/portfolio-pages/gig/gig-meta-image.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
-      title="Iggy Pop Howling at the Moon"
+      title="Gig!"
       media={
         <GifEmbed
-          videoUrl="../../images/portfolio-pages/iggy-pop/iggy-pop.mp4"
-          fallbackGifUrl="../../images/portfolio-pages/iggy-pop/iggy-pop-fallback.gif"
-          alt="Iggy Pop Howling at the Moon"
+          videoUrl="../../images/portfolio-pages/gig/gig.mp4"
+          fallbackGifUrl="../../images/portfolio-pages/gig/gig-fallback.gif"
+          alt="A rock band is playing on stage"
         />
       }
       description={
@@ -33,8 +33,8 @@ const IggyPopPage = ({ location }) => {
   )
 }
 
-IggyPopPage.propTypes = {
+GigPage.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default IggyPopPage
+export default GigPage
