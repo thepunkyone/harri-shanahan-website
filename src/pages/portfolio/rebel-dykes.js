@@ -94,6 +94,7 @@ const RebelDykesPage = ({ location }) => {
       metaImage="../../images/portfolio-pages/rebel-dykes/rebel-dykes-1.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Rebel Dykes"
+      year="2021"
       media={
         <Carousel
           slides={slides}

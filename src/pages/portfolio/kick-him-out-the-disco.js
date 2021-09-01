@@ -22,6 +22,7 @@ const KickHimOutTheDiscoPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="Kick Him Out the Disco"
+      year="2019"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/xY9tnICp01A?rel=0&modestbranding=1"

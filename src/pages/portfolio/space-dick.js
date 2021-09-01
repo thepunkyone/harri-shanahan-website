@@ -18,6 +18,7 @@ const SpaceDickPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="Space Dick"
+      year="2016"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/FRRQcGM6f6A?rel=0&modestbranding=1"

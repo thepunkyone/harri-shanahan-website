@@ -52,9 +52,9 @@ const fakeThumbnails = [
     icon="gallery"
   />,
   <GalleryThumbnail
-    title="An Invitation to My Demon Sister"
+    title="Invitation to My Demon Sister"
     image="./images/home-gallery/demon-sister-still.jpg"
-    url="/portfolio/an-invitation-to-my-demon-sister"
+    url="/portfolio/invitation-to-my-demon-sister"
     icon="video"
   />,
   <GalleryThumbnail

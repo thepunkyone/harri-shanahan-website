@@ -21,6 +21,7 @@ const IllSongPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="ILL Song"
+      year="2015"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/xmml7MBikXk?rel=0&modestbranding=1"

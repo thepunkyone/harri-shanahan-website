@@ -20,6 +20,7 @@ const BreakingNewsPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="Radio Partizan"
       title="Breaking News"
+      year="2018"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/Ux6cfNGtb2g?rel=0&modestbranding=1"

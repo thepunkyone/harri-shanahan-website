@@ -18,6 +18,7 @@ const IHeardItSaidPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="The Happy Soul"
       title="I Heard it Said"
+      year="2018"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/zVYnp54LvTA?rel=0&modestbranding=1"

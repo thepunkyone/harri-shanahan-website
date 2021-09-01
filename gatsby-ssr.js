@@ -8,6 +8,7 @@ const HtmlAttributes = {
 const HeadComponents = [
   <script
     // Modernizr script for lazy loading images
+    key="modernizr"
     type="text/javascript"
     defer
     src="/scripts/modernizr.js"

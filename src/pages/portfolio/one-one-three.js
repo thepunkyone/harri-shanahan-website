@@ -17,6 +17,7 @@ const OneOneThreePage = ({ location }) => {
       metaImage="https://i3.ytimg.com/vi/fXHy_pQMGKI/hqdefault.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="One One Three"
+      year="2015"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/fXHy_pQMGKI?rel=0&modestbranding=1"

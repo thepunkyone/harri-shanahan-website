@@ -17,6 +17,7 @@ const ItaliansWantTheMonarchyBackPage = ({ location }) => {
       metaImage="https://i3.ytimg.com/vi/JUpMK_V2XII/hqdefault.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Italians Want the Monarchy Back!"
+      year="2015"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/JUpMK_V2XII?rel=0&modestbranding=1"

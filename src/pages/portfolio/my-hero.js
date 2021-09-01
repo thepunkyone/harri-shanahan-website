@@ -62,10 +62,12 @@ const MyHeroPage = ({ location }) => {
   return (
     <PortfolioPageTemplate
       metaTitle="My Hero | Portfolio | Harri Shanahan"
-      metaDescription="Harri Shanahan (animation, story)."
+      metaDescription="Stills from “My Hero” - an animated short by Harri Shanahan
+          (animation, story)."
       metaImage="../../images/portfolio-pages/my-hero/my-hero-4.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="My Hero"
+      year="2020"
       media={
         <Carousel
           slides={slides}
@@ -75,7 +77,8 @@ const MyHeroPage = ({ location }) => {
       }
       description={
         <Typography component="p" variant="body2" color="textPrimary">
-          Harri Shanahan (animation, story).
+          Stills from “My Hero” - an animated short by Harri Shanahan
+          (animation, story).
         </Typography>
       }
     />

@@ -22,6 +22,7 @@ const AlrightLadsPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="Nervous Twitch"
       title="Alright Lads?"
+      year="2021"
       media={
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/cxDn60JqxWo?rel=0&modestbranding=1"

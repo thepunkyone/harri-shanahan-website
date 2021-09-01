@@ -20,13 +20,15 @@ const PortfolioPageTemplate = ({
   metaDescription,
   artist,
   title,
+  year,
   media,
   description,
 }) => {
+  const { siteUrl } = useSiteMetadata()
+
   const onBackLinkClick = () => {
     if (!canUseDOM) return
 
-    const { siteUrl } = useSiteMetadata()
     const ref = document.referrer
     const referredFromAnotherPageOnWebsite = ref.includes(siteUrl)
 
@@ -37,11 +39,36 @@ const PortfolioPageTemplate = ({
     }
   }
 
-  const titleWithArtist = (
-    <>
-      {artist} <span className={styles.divider}>•</span> {title}
-    </>
-  )
+  const renderTitle = () => {
+    if (artist && year) {
+      return (
+        <>
+          {artist} <span className={styles.divider}>•</span> {title}{' '}
+          <span className={styles.divider}>•</span>{' '}
+          <span className={styles.year}>{year}</span>
+        </>
+      )
+    }
+
+    if (artist) {
+      return (
+        <>
+          {artist} <span className={styles.divider}>•</span> {title}
+        </>
+      )
+    }
+
+    if (year) {
+      return (
+        <>
+          {title} <span className={styles.divider}>•</span>{' '}
+          <span className={styles.year}>{year}</span>
+        </>
+      )
+    }
+
+    return <>{title}</>
+  }
 
   return (
     <PageTemplate
@@ -68,7 +95,7 @@ const PortfolioPageTemplate = ({
           {media}
           <div className={styles.description}>
             <Typography className={styles.title} component="h1" variant="h3">
-              {artist ? titleWithArtist : title}
+              {renderTitle()}
             </Typography>
             {description}
           </div>
@@ -85,6 +112,7 @@ PortfolioPageTemplate.propTypes = {
   metaDescription: PropTypes.string.isRequired,
   artist: PropTypes.string,
   title: PropTypes.string.isRequired,
+  year: PropTypes.string,
   media: PropTypes.node.isRequired,
   description: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
     .isRequired,

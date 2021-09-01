@@ -9,23 +9,23 @@ import VideoEmbed from '../../components/atoms/VideoEmbed'
 
 import styles from './portfolio-page.module.scss'
 
-const IAmContagiousPage = ({ location }) => {
+const InvitationToMyDemonSisterPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
 
   return (
     <PortfolioPageTemplate
-      metaTitle="Bobbie Peru - I am Contagious | Portfolio | Harri Shanahan"
-      metaDescription="Produced, directed and edited by Harri Shanahan. Lots of green screen compositing and horror vfx in this one."
-      metaImage="https://i3.ytimg.com/vi/mvDQ0du3cic/hqdefault.jpg"
+      metaTitle="Invitation to My Demon Sister | Portfolio | Harri Shanahan"
+      metaDescription="Harri Shanahan (script, producer,
+          videographer, editor)."
+      metaImage="https://i3.ytimg.com/vi/nmna_Lmn2JA/hqdefault.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
-      artist="Bobbie Peru"
-      title="I am Contagious"
-      year="2017"
+      title="Invitation to My Demon Sister"
+      year="2014"
       media={
         <VideoEmbed
-          videoUrl="https://www.youtube.com/embed/mvDQ0du3cic?rel=0&modestbranding=1"
-          videoTitle="Bobbie Peru - I am Contagious"
-          aspectRatio="56.25%"
+          videoUrl="https://www.youtube.com/embed/nmna_Lmn2JA?rel=0&modestbranding=1"
+          videoTitle="Invitation to My Demon Sister"
+          aspectRatio="75%"
         />
       }
       description={
@@ -36,12 +36,11 @@ const IAmContagiousPage = ({ location }) => {
             variant="body2"
             color="textPrimary"
           >
-            Track from the album “Nurse Corkscrew”.
+            Short art video on the theme of the female gaze with cheap as chips
+            special effects and a naughty sun.
           </Typography>
           <Typography component="p" variant="body2" color="textPrimary">
-            Written by: Bobbie Peru/Harri Shanahan. Produced, directed and
-            edited by Harri Shanahan. Lots of green screen compositing and
-            horror vfx in this one.
+            Harri Shanahan (script, producer, videographer, editor).
           </Typography>
         </>
       }
@@ -49,8 +48,8 @@ const IAmContagiousPage = ({ location }) => {
   )
 }
 
-IAmContagiousPage.propTypes = {
+InvitationToMyDemonSisterPage.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default IAmContagiousPage
+export default InvitationToMyDemonSisterPage

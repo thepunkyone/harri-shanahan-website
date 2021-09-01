@@ -1,5 +1,5 @@
 require('dotenv').config({
-  path: '.env',
+  path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -33,6 +33,6 @@ module.exports = {
     'gatsby-plugin-svgr',
   ],
   siteMetadata: {
-    siteUrl: 'https://serene-archimedes-c35fea.netlify.app/',
+    siteUrl: process.env.GATSBY_SITE_URL,
   },
 }
