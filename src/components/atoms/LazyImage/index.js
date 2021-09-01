@@ -27,7 +27,6 @@ const LazyImage = ({
 
   return (
     <img
-      src={src}
       alt={alt}
       data-src={dataSrc}
       data-sizes={dataSizes}

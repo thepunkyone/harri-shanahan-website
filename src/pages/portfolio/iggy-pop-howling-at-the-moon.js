@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import useSiteMetadata from '../../hooks/use-site-metadata'
 
 import PortfolioPageTemplate from '../../components/templates/PortfolioPageTemplate'
-import Gif from '../../components/atoms/Gif'
+import GifEmbed from '../../components/atoms/GifEmbed'
 
 const IggyPopPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
@@ -18,7 +18,7 @@ const IggyPopPage = ({ location }) => {
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Iggy Pop Howling at the Moon"
       media={
-        <Gif
+        <GifEmbed
           videoUrl="../../images/portfolio-pages/iggy-pop/iggy-pop.mp4"
           fallbackGifUrl="../../images/portfolio-pages/iggy-pop/iggy-pop-fallback.gif"
           alt="Iggy Pop Howling at the Moon"
