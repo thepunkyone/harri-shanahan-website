@@ -91,12 +91,11 @@
   background-color: rgba($colour-white, 0.8);
   text-align: center;
   opacity: 0;
-  transform: translate3d(-50%, 150%, 0);
+  transform: translate(-50%, -50%);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   .thumbnail:hover & {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
   }
 }
 
