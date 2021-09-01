@@ -122,13 +122,13 @@ const fakeThumbnails = [
     superTitle="ILL"
     title="Kick Him out the Disco"
     image="./images/home-gallery/kick-him-out-the-disco-still.jpg"
-    url="/"
+    url="/portfolio/kick-him-out-the-disco"
     icon="video"
   />,
   <GalleryThumbnail
     title="One One Three"
     image="./images/home-gallery/one-one-three-still.jpg"
-    url="/"
+    url="/portfolio/one-one-three"
     icon="video"
   />,
 ]

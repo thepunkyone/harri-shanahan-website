@@ -13,7 +13,9 @@ const BreakingNewsPage = ({ location }) => {
   return (
     <PortfolioPageTemplate
       metaTitle="Radio Partizan - Breaking News | Portfolio | Harri Shanahan"
-      metaDescription="Simone Tripodi/Bric-hu-Brac.tv. Edited by Harri Shanahan."
+      metaDescription="Produced by Harri Shanahan and Mirko Lazzarin
+          (Armadillo Media). Directed by Harri Shanahan. Camera: Mirko Lazzarin,
+          Edit: Harri Shanahan."
       metaImage="https://i3.ytimg.com/vi/Ux6cfNGtb2g/hqdefault.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="Radio Partizan"
