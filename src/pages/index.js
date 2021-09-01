@@ -34,14 +34,14 @@ const fakeThumbnails = [
     superTitle="Nervous Twitch"
     title="Alright Lads?"
     image="./images/home-gallery/alright-lads.jpg"
-    url="/"
-    icon="gallery"
+    url="/portfolio/alright-lads"
+    icon="video"
   />,
   <GalleryThumbnail
     superTitle="ILL"
     title="Space Dick"
     image="./images/home-gallery/space-dick-still.jpg"
-    url="/"
+    url="/portfolio/space-dick"
     icon="video"
   />,
   <GalleryThumbnailGif
@@ -54,13 +54,13 @@ const fakeThumbnails = [
   <GalleryThumbnail
     title="An Invitation to My Demon Sister"
     image="./images/home-gallery/demon-sister-still.jpg"
-    url="/"
+    url="/portfolio/an-invitation-to-my-demon-sister"
     icon="video"
   />,
   <GalleryThumbnail
     title="Rebel Dykes"
     image="./images/home-gallery/rebel-dykes-still.jpg"
-    url="/"
+    url="/portfolio/rebel-dykes"
     icon="gallery"
   />,
   <GalleryThumbnail
