@@ -25,7 +25,7 @@ const IllSongPage = ({ location }) => {
         <VideoEmbed
           videoUrl="https://www.youtube.com/embed/xmml7MBikXk?rel=0&modestbranding=1"
           videoTitle="ILL - ILL Song"
-          aspectRatio="56%"
+          aspectRatio="56.25%"
         />
       }
       description={

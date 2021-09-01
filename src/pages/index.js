@@ -88,7 +88,7 @@ const fakeThumbnails = [
     superTitle="The Happy Soul"
     title="I Heard it Said"
     image="./images/home-gallery/the-happy-soul-still.jpg"
-    url="/"
+    url="/portfolio/i-heard-it-said"
     icon="video"
   />,
   <GalleryThumbnailGif
@@ -102,13 +102,13 @@ const fakeThumbnails = [
     superTitle="Bobbie Peru"
     title="I am Contagious"
     image="./images/home-gallery/bobbie-peru-still.jpg"
-    url="/"
+    url="/portfolio/i-am-contagious"
     icon="video"
   />,
   <GalleryThumbnail
-    title="Italians Want the Monarchy Back"
+    title="Italians Want the Monarchy Back!"
     image="./images/home-gallery/italians-want-the-monarchy-back-still.jpg"
-    url="/"
+    url="/portfolio/italians-want-the-monarchy-back"
     icon="video"
   />,
   <GalleryThumbnail
