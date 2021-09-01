@@ -7,34 +7,37 @@ import useSiteMetadata from '../../hooks/use-site-metadata'
 import PortfolioPageTemplate from '../../components/templates/PortfolioPageTemplate'
 import VideoEmbed from '../../components/atoms/VideoEmbed'
 
-const ItaliansWantTheMonarchyBackPage = ({ location }) => {
+const BreakingNewsPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
 
   return (
     <PortfolioPageTemplate
-      metaTitle="Italians Want the Monarchy Back! | Portfolio | Harri Shanahan"
+      metaTitle="Radio Partizan - Breaking News | Portfolio | Harri Shanahan"
       metaDescription="Simone Tripodi/Bric-hu-Brac.tv. Edited by Harri Shanahan."
-      metaImage="https://i3.ytimg.com/vi/JUpMK_V2XII/hqdefault.jpg"
+      metaImage="https://i3.ytimg.com/vi/Ux6cfNGtb2g/hqdefault.jpg"
       absoluteUrl={`${siteUrl}${location.pathname}`}
-      title="Italians Want the Monarchy Back!"
+      artist="Radio Partizan"
+      title="Breaking News"
       media={
         <VideoEmbed
-          videoUrl="https://www.youtube.com/embed/JUpMK_V2XII?rel=0&modestbranding=1"
-          videoTitle="Italians Want the Monarchy Back!"
+          videoUrl="https://www.youtube.com/embed/Ux6cfNGtb2g?rel=0&modestbranding=1"
+          videoTitle="Radio Partizan - Breaking News"
           aspectRatio="56.25%"
         />
       }
       description={
         <Typography component="p" variant="body2" color="textPrimary">
-          Simone Tripodi/Bric-hu-Brac.tv. Edited by Harri Shanahan.
+          Written by: Tim Dawtry. Produced by Harri Shanahan and Mirko Lazzarin
+          (Armadillo Media). Directed by Harri Shanahan. Camera: Mirko Lazzarin,
+          Edit: Harri Shanahan.
         </Typography>
       }
     />
   )
 }
 
-ItaliansWantTheMonarchyBackPage.propTypes = {
+BreakingNewsPage.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default ItaliansWantTheMonarchyBackPage
+export default BreakingNewsPage

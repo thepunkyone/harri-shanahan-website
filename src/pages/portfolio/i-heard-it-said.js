@@ -7,7 +7,7 @@ import useSiteMetadata from '../../hooks/use-site-metadata'
 import PortfolioPageTemplate from '../../components/templates/PortfolioPageTemplate'
 import VideoEmbed from '../../components/atoms/VideoEmbed'
 
-const iHeardItSaidPage = ({ location }) => {
+const IHeardItSaidPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
 
   return (
@@ -35,8 +35,8 @@ const iHeardItSaidPage = ({ location }) => {
   )
 }
 
-iHeardItSaidPage.propTypes = {
+IHeardItSaidPage.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default iHeardItSaidPage
+export default IHeardItSaidPage

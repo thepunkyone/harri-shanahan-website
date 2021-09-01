@@ -115,7 +115,7 @@ const fakeThumbnails = [
     superTitle="Radio Partizan"
     title="Breaking News"
     image="./images/home-gallery/radio-partizan-still.jpg"
-    url="/"
+    url="/portfolio/breaking-news"
     icon="video"
   />,
   <GalleryThumbnail

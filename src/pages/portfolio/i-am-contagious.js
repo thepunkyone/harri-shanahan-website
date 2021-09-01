@@ -9,7 +9,7 @@ import VideoEmbed from '../../components/atoms/VideoEmbed'
 
 import styles from './portfolio-page.module.scss'
 
-const iHeardItSaidPage = ({ location }) => {
+const IAmContagiousPage = ({ location }) => {
   const { siteUrl } = useSiteMetadata()
 
   return (
@@ -48,8 +48,8 @@ const iHeardItSaidPage = ({ location }) => {
   )
 }
 
-iHeardItSaidPage.propTypes = {
+IAmContagiousPage.propTypes = {
   location: PropTypes.object.isRequired,
 }
 
-export default iHeardItSaidPage
+export default IAmContagiousPage
