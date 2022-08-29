@@ -74,7 +74,7 @@ const PortfolioPageTemplate = ({
     <PageTemplate
       className={styles.page}
       absoluteUrl={absoluteUrl}
-      image={`${metaImage}?nf_resize=smartcrop&w=1200&h=600`}
+      image={metaImage}
       title={metaTitle}
       description={metaDescription}
     >
