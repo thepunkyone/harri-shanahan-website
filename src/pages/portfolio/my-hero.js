@@ -64,7 +64,7 @@ const MyHeroPage = ({ location }) => {
       metaTitle="My Hero | Portfolio | Harri Shanahan"
       metaDescription="Stills from “My Hero” - an animated short by Harri Shanahan
           (animation, story)."
-      metaImage={`${siteUrl}images/portfolio-pages/my-hero/my-hero-4.png`}
+      metaImage={`${siteUrl}/images/portfolio-pages/my-hero/my-hero-4.png`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="My Hero"
       year="2020"

@@ -14,7 +14,7 @@ const GigPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="Gig! | Portfolio | Harri Shanahan"
       metaDescription="Harri Shanahan (animation)."
-      metaImage={`${siteUrl}images/portfolio-pages/gig/gig-meta-image.png`}
+      metaImage={`${siteUrl}/images/portfolio-pages/gig/gig-meta-image.png`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Gig!"
       media={
