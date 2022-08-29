@@ -26,16 +26,16 @@ const PortfolioPageTemplate = ({
 }) => {
   const { siteUrl } = useSiteMetadata()
 
-  const onBackLinkClick = () => {
+  const onBackLinkClick = async () => {
     if (!canUseDOM) return
 
     const ref = document.referrer
     const referredFromAnotherPageOnWebsite = ref.includes(siteUrl)
 
     if (referredFromAnotherPageOnWebsite) {
-      navigate(-1)
+      await navigate(-1)
     } else {
-      navigate('/')
+      await navigate('/')
     }
   }
 
