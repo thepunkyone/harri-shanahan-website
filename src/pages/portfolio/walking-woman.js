@@ -14,7 +14,7 @@ const WalkingWomanPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="Walking Woman | Portfolio | Harri Shanahan"
       metaDescription="Harri Shanahan (animation)."
-      metaImage="../../images/portfolio-pages/walking-woman/walking-woman-meta-image.png"
+      metaImage="/images/portfolio-pages/walking-woman/walking-woman-meta-image.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Walking Woman"
       media={

@@ -17,7 +17,7 @@ const RebelDykesPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="Rebel Dykes | Portfolio | Harri Shanahan"
       metaDescription="The story of how a lesbian fetish club became a beacon of freedom and community for a gang of outsider dykes struggling as punks, sex workers, activists, musicians and artists in 1980s London."
-      metaImage="../../images/portfolio-pages/rebel-dykes/rebel-dykes-1.png"
+      metaImage="/images/portfolio-pages/rebel-dykes/rebel-dykes-1.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Rebel Dykes"
       year="2021"

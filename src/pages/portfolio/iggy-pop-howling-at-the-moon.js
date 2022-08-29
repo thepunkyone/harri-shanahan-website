@@ -14,7 +14,7 @@ const IggyPopPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="Iggy Pop Howling at the Moon | Portfolio | Harri Shanahan"
       metaDescription="Harri Shanahan (animation)."
-      metaImage="../../images/portfolio-pages/iggy-pop/iggy-pop-meta-image.png"
+      metaImage="/images/portfolio-pages/iggy-pop/iggy-pop-meta-image.png"
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Iggy Pop Howling at the Moon"
       media={
