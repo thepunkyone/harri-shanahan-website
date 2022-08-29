@@ -9,6 +9,8 @@ import MenuIcon from '@material-ui/icons/Menu'
 import Avatar from '@material-ui/core/Avatar'
 import { Link } from 'gatsby'
 
+import useSiteMetadata from '../../../hooks/use-site-metadata'
+
 import styles from './header.module.scss'
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles()
+  const { siteUrl } = useSiteMetadata()
 
   return (
     <div className={classes.root}>
@@ -28,7 +31,7 @@ export default function Header() {
             <Avatar
               className={styles.avatar}
               alt="Harri Shanahan"
-              src="./images/home/nice-profile-pic.jpg?nf_resize=fit&w=40"
+              src={`${siteUrl}/images/home/nice-profile-pic.jpg?nf_resize=fit&w=40`}
             />
             <Typography variant="h6" className={styles.title}>
               Harri Shanahan
