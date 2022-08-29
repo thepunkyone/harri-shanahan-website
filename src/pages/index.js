@@ -142,7 +142,7 @@ export default function Index({ location }) {
       className={styles.page}
       title="Animation. Video. Art. | Harri Shanahan"
       description="I love a creative challenge and helping people achieve their vision. If you’ve got an idea for a great video or animation, I can help you make it a reality."
-      image={`${siteUrl}/images/hero/my-hero.jpg?nf_resize=smartcrop&w=1200&h=600`}
+      image={`${siteUrl}images/hero/my-hero.jpg?nf_resize=smartcrop&w=1200&h=600`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
     >
       <Hero />
