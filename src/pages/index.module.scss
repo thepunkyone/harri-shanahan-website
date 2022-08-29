@@ -108,6 +108,18 @@
   padding: gutter(3);
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%) !important;
   border-radius: gutter(1) !important;
+  background-image: url('../../src/svgs/patterns/flags.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+
+  @include below(600px) {
+    background-size: 150%;
+  }
+
+  @include between(large, 1140px) {
+    background-size: 130%;
+  }
 }
 
 .avatarLarge{
@@ -121,7 +133,7 @@
   height: 224px;
   margin: 0 auto 24px;
   padding: 6px;
-  background-color: $colour-secondary-light;
+  background-color: $colour-secondary;
   border-radius: 200px;
 }
 
