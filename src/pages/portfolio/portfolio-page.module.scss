@@ -5,11 +5,11 @@
 // ==========================================================================
 
 .paragraphMargin {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.2em !important;
 }
 
 .list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
 }

@@ -41,11 +41,11 @@ $MAX_SCREEN_WIDTH: 1280px;
   #{$property}: $result;
 
   @media screen and (max-width: #{$minScreenWidth}) {
-    #{$property}: #{$minSize};
+    #{$property}: #{$minSize} !important;
   }
 
   @media screen and (min-width: #{$maxScreenWidth}) {
-    #{$property}: #{$maxSize};
+    #{$property}: #{$maxSize} !important;
   }
 }
 

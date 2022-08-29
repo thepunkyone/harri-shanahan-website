@@ -51,26 +51,26 @@
 .videoIcon, .galleryIcon, .gifIcon {
   @include transition;
 
-  position: absolute;
-  color: $colour-primary;
+  position: absolute !important;
+  color: $colour-primary !important;
 }
 
 .videoIcon {
-  top: calc(6% - 5px);
-  right: 6%;
-  font-size: 60px;
+  top: calc(6% - 5px) !important;
+  right: 6% !important;
+  font-size: 60px !important;
 }
 
 .galleryIcon {
-  top: calc(6% + 5px);
-  right: calc(6% + 5px);
-  font-size: 50px;
+  top: calc(6% + 5px) !important;
+  right: calc(6% + 5px) !important;
+  font-size: 50px !important;
 }
 
 .gifIcon {
-  top: calc(6% - 5px);
-  right: 6%;
-  font-size: 60px;
+  top: calc(6% - 5px) !important;
+  right: 6% !important;
+  font-size: 60px !important;
 }
 
 // Overlay

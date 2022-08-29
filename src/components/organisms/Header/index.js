@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Avatar from '@material-ui/core/Avatar'
+import { Link } from 'gatsby'
 
 import styles from './header.module.scss'
 
@@ -23,14 +24,16 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar color="secondary" position="static" className={styles.header}>
         <Toolbar>
-          <Avatar
-            className={styles.avatar}
-            alt="Harri Shanahan"
-            src="./images/home/nice-profile-pic.jpg?w=40"
-          />
-          <Typography variant="h6" className={styles.title}>
-            Harri Shanahan
-          </Typography>
+          <Link className={styles.link} to="/">
+            <Avatar
+              className={styles.avatar}
+              alt="Harri Shanahan"
+              src="./images/home/nice-profile-pic.jpg?nf_resize=fit&w=40"
+            />
+            <Typography variant="h6" className={styles.title}>
+              Harri Shanahan
+            </Typography>
+          </Link>
           {/*<Button color="inherit">About</Button>*/}
           {/*<Button color="inherit">Gif</Button>*/}
           {/*<IconButton*/}

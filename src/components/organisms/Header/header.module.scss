@@ -8,6 +8,19 @@
   box-shadow: none;
 }
 
+.link {
+  @include transition;
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $colour-grey-alpha;
+
+  &:hover {
+    color: $colour-white;
+  }
+}
+
 // Avatar
 .avatar {
   margin-right: gutter(2);
@@ -18,4 +31,5 @@
 .title {
   flex-grow: 1;
   letter-spacing: 0.07em;
+
 }

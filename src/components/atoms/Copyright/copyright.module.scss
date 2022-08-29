@@ -5,14 +5,14 @@
 // ==========================================================================
 
 .copyright, .madeBy {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .copyright {
-  margin-bottom: gutter(1.5);
+  margin-bottom: gutter(1.5) !important;
 }
 
 .icon {
-  font-size: 1rem;
-  transform: translateY(3px);
+  font-size: 1rem !important;
+  transform: translateY(3px) !important;
 }

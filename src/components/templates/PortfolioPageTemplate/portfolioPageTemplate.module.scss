@@ -87,15 +87,15 @@
 .title {
   @include margin-bottom(gutter(2), gutter(3.5));
 
-  display: inline-block;
-  color: $colour-secondary-dark;
-  font-weight: 600;
+  display: inline-block !important;
+  color: $colour-secondary-dark !important;
+  font-weight: 600 !important;
 }
 
 .divider {
-  color: $colour-grey-delta;
+  color: $colour-grey-delta !important;
 }
 
 .year {
-  color: $colour-grey-delta;
+  color: $colour-grey-delta !important;
 }

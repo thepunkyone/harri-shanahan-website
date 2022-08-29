@@ -19,7 +19,12 @@ export default function Copyright() {
         {'Made with '}
         <FavoriteRounded className={styles.icon} />
         {' by '}
-        <MuiLink color="inherit" href="https://github.com/thepunkyone">
+        <MuiLink
+          color="inherit"
+          href="https://github.com/thepunkyone"
+          rel="nofollow"
+          target="_blank"
+        >
           thepunkyone
         </MuiLink>
       </Typography>

@@ -11,23 +11,23 @@
 // Field
 
 .field {
-  margin-bottom: gutter(3);
+  margin-bottom: gutter(3) !important;
 
   input {
-    background-color: lighten($colour-white, 5%);
-    border-radius: gutter(0.5);
+    background-color: lighten($colour-white, 5%) !important;
+    border-radius: gutter(0.5) !important;
   }
 }
 
 // Textarea
 
 .textArea {
-  margin-bottom: gutter(4);
-  background-color: lighten($colour-white, 5%);
-  border-radius: gutter(0.5);
+  margin-bottom: gutter(4) !important;
+  background-color: lighten($colour-white, 5%) !important;
+  border-radius: gutter(0.5) !important;
 
   textarea {
-    min-height: 200px;
+    min-height: 200px !important;
   }
 }
 
@@ -44,9 +44,9 @@
 // Submit button
 
 .submitButton {
-  display: block;
-  width: 100%;
-  font-size: 1em;
+  display: block !important;
+  width: 100% !important;
+  font-size: 1em !important;
 }
 
 // Notifications

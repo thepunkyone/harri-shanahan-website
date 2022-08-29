@@ -1,8 +1,8 @@
 import { red } from '@material-ui/core/colors'
-import { createTheme, responsiveFontSizes } from '@material-ui/core/styles'
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 
 // A custom theme for this app
-const customTheme = createTheme({
+const customTheme = createMuiTheme({
   palette: {
     primary: {
       main: '#7159b2',
@@ -63,14 +63,6 @@ const customTheme = createTheme({
     button: {
       fontFamily: `"Open Sans", "Helvetica", "Arial", sans-serif`,
       fontWeight: 600,
-    },
-  },
-  overrides: {
-    MuiCssBaseline: {
-      body: {
-        display: 'flex',
-        minHeight: '100%',
-      },
     },
   },
 })

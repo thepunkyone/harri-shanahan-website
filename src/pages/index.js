@@ -23,6 +23,12 @@ import ContactForm from '../components/organisms/ContactForm'
 import styles from './index.module.scss'
 
 const portfolioLinks = [
+  <GalleryThumbnail
+    title="Rebel Dykes"
+    image="./images/home-gallery/rebel-dykes-still.jpg"
+    url="/portfolio/rebel-dykes"
+    icon="video"
+  />,
   <GalleryThumbnailGif
     title="My Hero"
     video="./images/home-gallery/my-hero-2.mp4"
@@ -56,12 +62,6 @@ const portfolioLinks = [
     image="./images/home-gallery/demon-sister-still.jpg"
     url="/portfolio/invitation-to-my-demon-sister"
     icon="video"
-  />,
-  <GalleryThumbnail
-    title="Rebel Dykes"
-    image="./images/home-gallery/rebel-dykes-still.jpg"
-    url="/portfolio/rebel-dykes"
-    icon="gallery"
   />,
   <GalleryThumbnail
     superTitle="ILL"
@@ -220,7 +220,7 @@ export default function Index({ location }) {
           </Typography>
           <VideoEmbed
             videoTitle="Animation Showreel"
-            videoUrl="https://player.vimeo.com/video/229623427?autoplay=0&title=0&portrait=0&byline=0&color=7159b2"
+            videoUrl="https://player.vimeo.com/video/743729163?autoplay=0&title=0&portrait=0&byline=0&color=7159b2"
           />
         </Container>
       </Container>
