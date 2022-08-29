@@ -14,7 +14,7 @@ const IHeardItSaidPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="The Happy Soul - I Heard it Said | Portfolio | Harri Shanahan"
       metaDescription="Written by Mark Simpson, Directed & produced by Mark Simpson and Harri Shanahan, camera and edit, Harri Shanahan."
-      metaImage="https://i3.ytimg.com/vi/zVYnp54LvTA/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/i-am-contagious/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="The Happy Soul"
       title="I Heard it Said"

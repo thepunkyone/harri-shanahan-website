@@ -16,7 +16,7 @@ const IAmContagiousPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="Bobbie Peru - I am Contagious | Portfolio | Harri Shanahan"
       metaDescription="Produced, directed and edited by Harri Shanahan. Lots of green screen compositing and horror vfx in this one."
-      metaImage="https://i3.ytimg.com/vi/mvDQ0du3cic/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/i-am-contagious/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="Bobbie Peru"
       title="I am Contagious"

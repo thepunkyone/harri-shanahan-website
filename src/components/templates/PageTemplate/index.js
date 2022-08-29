@@ -30,14 +30,17 @@ const PageTemplate = ({
         <meta property="og:url" content={absoluteUrl} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={`${image}?nf_resize=fit&w=1200`} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@hshanahanart" />
         <meta property="twitter:url" content={absoluteUrl} />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content={image} />
+        <meta
+          property="twitter:image"
+          content={`${image}?nf_resize=smartcrop&w=1200&h=600`}
+        />
 
         <link
           rel="apple-touch-icon"

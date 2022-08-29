@@ -17,7 +17,7 @@ const InvitationToMyDemonSisterPage = ({ location }) => {
       metaTitle="Invitation to My Demon Sister | Portfolio | Harri Shanahan"
       metaDescription="Harri Shanahan (script, producer,
           videographer, editor)."
-      metaImage="https://i3.ytimg.com/vi/nmna_Lmn2JA/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/invitation-to-my-demon-sister/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Invitation to My Demon Sister"
       year="2014"

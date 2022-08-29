@@ -14,7 +14,7 @@ const ItaliansWantTheMonarchyBackPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="Italians Want the Monarchy Back! | Portfolio | Harri Shanahan"
       metaDescription="Simone Tripodi/Bric-hu-Brac.tv. Edited by Harri Shanahan."
-      metaImage="https://i3.ytimg.com/vi/JUpMK_V2XII/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/italians-want-the-monarchy-back/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="Italians Want the Monarchy Back!"
       year="2015"

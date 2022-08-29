@@ -16,7 +16,7 @@ const BreakingNewsPage = ({ location }) => {
       metaDescription="Produced by Harri Shanahan and Mirko Lazzarin
           (Armadillo Media). Directed by Harri Shanahan. Camera: Mirko Lazzarin,
           Edit: Harri Shanahan."
-      metaImage="https://i3.ytimg.com/vi/Ux6cfNGtb2g/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/breaking-news/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="Radio Partizan"
       title="Breaking News"

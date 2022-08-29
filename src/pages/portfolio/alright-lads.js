@@ -18,7 +18,7 @@ const AlrightLadsPage = ({ location }) => {
       metaDescription="For this garage/pop-punk trio from Leeds, we built on the band’s
             existing branding and went for a fun collage feel referencing
             classic Garage album covers."
-      metaImage="https://i3.ytimg.com/vi/cxDn60JqxWo/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/alright-lads/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="Nervous Twitch"
       title="Alright Lads?"

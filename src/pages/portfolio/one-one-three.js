@@ -14,7 +14,7 @@ const OneOneThreePage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="One One Three | Portfolio | Harri Shanahan"
       metaDescription="One One Three fashion commercial. Edited by Harri Shanahan."
-      metaImage="https://i3.ytimg.com/vi/fXHy_pQMGKI/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/one-one-three/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       title="One One Three"
       year="2015"

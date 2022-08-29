@@ -18,7 +18,7 @@ const KickHimOutTheDiscoPage = ({ location }) => {
       metaDescription="An unashamedly cheesy tribute to 1970s music videos and the ‘Pan’s
             People’ era of Top of The Pops, shot at The Kings Arms Theatre in
             Salford."
-      metaImage="https://i3.ytimg.com/vi/xY9tnICp01A/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/kick-him-out-the-disco/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="Kick Him Out the Disco"

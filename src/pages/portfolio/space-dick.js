@@ -14,7 +14,7 @@ const SpaceDickPage = ({ location }) => {
     <PortfolioPageTemplate
       metaTitle="ILL - Space Dick | Portfolio | Harri Shanahan"
       metaDescription="Written & produced by ILL, directed, shot edited and animated by Harri Shanahan."
-      metaImage="https://i3.ytimg.com/vi/FRRQcGM6f6A/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/space-dick/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="Space Dick"

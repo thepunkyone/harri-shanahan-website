@@ -17,7 +17,7 @@ const IllSongPage = ({ location }) => {
       metaTitle="ILL - ILL Song | Portfolio | Harri Shanahan"
       metaDescription="Lots of (dark and twisted) fun. £1 shop costumes and horrifying makeup are all
             part of the service."
-      metaImage="https://i3.ytimg.com/vi/xmml7MBikXk/hqdefault.jpg"
+      metaImage={`${siteUrl}/images/portfolio-pages/ill-song/meta-image.jpg`}
       absoluteUrl={`${siteUrl}${location.pathname}`}
       artist="ILL"
       title="ILL Song"
